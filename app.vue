@@ -9,6 +9,14 @@
   <AppFooter />
 </template>
 
+<script setup lang="ts">
+useHead({
+  // as a string,
+  // where `%s` is replaced with the title
+  titleTemplate: '%s | George Nance',
+})
+</script>
+
 <style>
 .page-enter-active,
 .page-leave-active {
@@ -17,11 +25,11 @@
 
 .page-leave-to {
   opacity: 0;
-  transform: translateY(-5px);
+  transform: translateX(-5px);
 }
 
 .page-enter-from {
   opacity: 0;
-  transform: translateY(5px);
+  transform: translateX(5px);
 }
 </style>

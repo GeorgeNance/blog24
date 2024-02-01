@@ -15,7 +15,7 @@
 const description =
   "Coming soon! I'm working on a few projects that I can't wait to share. Stay tuned!";
 useSeoMeta({
-  title: "Projects | George Nance",
+  title: "Projects",
   description,
 });
 

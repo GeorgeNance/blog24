@@ -6,6 +6,10 @@
       <ContentDoc v-slot="{ doc }" tag="article">
         <article>
           <h1>{{ doc.title }}</h1>
+          <div class="text-center">
+            <time class="text-gray-600 dark:text-gray-500" :datetime="doc.published">{{ getReadableDate(doc.published) }}</time>
+          </div>
+
           <ContentRenderer :value="doc" />
         </article>
       </ContentDoc>
@@ -20,6 +24,16 @@ useSeoMeta({
   twitterCard: "summary_large_image",
   articleAuthor: "George Nance",
 });
+
+
+const getReadableDate = (dateString) => {
+  const date = new Date(dateString);
+  return date.toLocaleDateString("en-US", {
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+  });
+};
 </script>
 <style>
 .prose h2 a,

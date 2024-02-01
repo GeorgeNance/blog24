@@ -1,6 +1,6 @@
 ---
 title: 'A useful shell command for killing processes by port'
-published: 2021-02-19
+published: 2024-02-01
 tags: ['productivity']
 slug: useful-function-killing-process-port
 cover_image: cover.jpg
@@ -20,7 +20,7 @@ Failed to listen on localhost:8000 (reason: Address already in use)
 ```
 
 
-In order to
+Here is a function to quickly kill any rogue processes on a certain port
 
 
 To use this, just add it to `~/.bashrc` or `~/.zshrc` file:
@@ -31,4 +31,10 @@ killport() {
   echo "Killing process on port: $1";
   kill -9 $(lsof -t -i:$1 -sTCP:LISTEN)
 }
+```
+Reload your terminal and now you call kill any port you need access to
+
+```bash
+> killport 9000
+Killing process on port: 8000
 ```
