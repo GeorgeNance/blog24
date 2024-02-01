@@ -1,5 +1,5 @@
 <template>
-  <div ref="headerRef" :style="styles" class="fixed top-0 w-full z-50 text-gray-800 rounded shadow-lg bg-white/90 shadow-gray-800/5 ring-1 backdrop-blur dark:bg-gray-800/90 dark:text-gray-200 dark:ring-white/20 ring-gray-900/5">
+  <div ref="headerRef" :style="styles" class="fixed top-0 w-full z-50 text-gray-800 shadow-lg bg-white/90 shadow-gray-800/5 ring-1 backdrop-blur dark:bg-slate-800/90 dark:text-gray-200 dark:ring-white/20 ring-gray-900/5">
     <nav class="mx-auto px-4 sm:px-6 max-w-2xl">
       <ul
         class="flex items-center justify-center text-sm font-medium "
@@ -15,7 +15,7 @@
               active-class="text-primary-600 dark:text-primary-400"
             >
               <Icon aria-hidden="true" :name="item.icon" class="w-5 h-5 z-10" />
-              <h5 class="ml-2 mb-0" >{{ item.name }}</h5>
+              <h5 class="ml-2 mb-0 md:flex hidden" >{{ item.name }}</h5>
               <span
                 v-if="$route.path === item.path"
                 class="absolute inset-x-1 -bottom-px h-px bg-gradient-to-r from-primary-500/0 via-primary-500/70 to-primary-500/0 dark:from-primary-400/0 dark:via-primary-400/40 dark:to-primary-400/0"
@@ -43,18 +43,26 @@ const headerRef = ref(null);
 const { styles } = useFixedHeader(headerRef);
 
 const items = [
-  { name: "Home", path: "/", icon: "solar:home-smile-outline" },
+  { name: "Home",
+    path: "/", 
+    icon: "solar:home-smile-outline" 
+  },
   {
     name: "Projects",
     path: "/projects",
-    icon: "solar:folder-with-files-outline",
+    icon: "solar:code-2-bold-duotone",
   },
   {
     name: "Articles",
     path: "/articles",
-    icon: "solar:document-add-outline",
+    icon: "solar:notes-line-duotone",
+  },  
+  {
+    name: "Now",
+    path: "/now",
+    icon: "solar:watch-square-minimalistic-outline",
   },
-  { name: "Lab", path: "/lab", icon: "heroicons:beaker" },
+  // { name: "Lab", path: "/lab", icon: "heroicons:beaker" },
   // {
   //   name: "Bag",
   //   path: "/whats-in-my-bag",

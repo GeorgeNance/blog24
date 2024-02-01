@@ -2,7 +2,7 @@
   <NuxtLink :to="article._path" class="group">
     <article>
       <time
-        class="relative z-10 order-first mb-3 flex items-center text-sm text-gray-400 dark:text-gray-500 pl-3.5"
+        class="relative z-10 order-first mb-1 flex items-center text-sm text-gray-100 dark:text-gray-400 pl-3.5"
         datetime="2022-09-05"
         ><span
           class="absolute inset-y-0 left-0 flex items-center"

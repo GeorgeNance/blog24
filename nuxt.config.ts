@@ -1,4 +1,9 @@
 export default defineNuxtConfig({
+    routeRules: {
+      '/delete-untracked-files-git': { redirect: '/articles/delete-untracked-files-git' },
+      '/being-productive-programmer-adhd': { redirect: '/articles/being-productive-programmer-adhd', },
+      '/latest': { redirect: '/articles' },
+  },
   devtools: { enabled: true },
   modules: [
     "@nuxt/ui",
@@ -21,7 +26,7 @@ export default defineNuxtConfig({
         class: "h-full",
       },
       bodyAttrs: {
-        class: "antialiased bg-gray-50 dark:bg-black min-h-screen",
+        class: "antialiased bg-gray-50 dark:bg-slate-900 min-h-screen",
       },
     },
   },

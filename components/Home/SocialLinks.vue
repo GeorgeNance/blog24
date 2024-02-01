@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2 class="uppercase text-xs font-semibold text-gray-400 mb-4">FIND ME ON</h2>
+    <h2 class="uppercase text-xs font-semibold dark:text-gray-300 text-gray-500 mb-4">FIND ME ON</h2>
     <div class="space-y-5 flex flex-row justify-evenly">
       <NuxtLink
         v-for="link in links"
@@ -8,7 +8,7 @@
         :to="link.url"
         target="_blank"
         external
-        class="flex items-end gap-4 dark:hover:text-gray-300 group"
+        class="flex items-end gap-2 dark:hover:text-gray-200 group"
       >
               <Icon :name="link.icon" class="w-6 h-6 mr-1"></Icon>
         <span class="text-sm">

@@ -1,9 +1,9 @@
 <template>
   <div>
-    <h2 class="uppercase text-xs font-semibold text-gray-400 mb-6">
-      FEATURED PROEJCTS
+    <h2 class="uppercase text-xs font-semibold dark:text-gray-300 text-gray-500 mb-6">
+      FEATURED PROJECTS
     </h2>
-    <div class="space-y-4">
+    <div class="space-y-4 grid-cols-2">
       <AppProjectCard
         v-for="(project, id) in projects"
         :key="id"
