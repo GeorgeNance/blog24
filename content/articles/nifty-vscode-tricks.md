@@ -4,7 +4,7 @@ date: 2020-05-21
 tags: ['vscode']
 slug: nifty-vscode-tricks
 description: Some vscode tricks I have learned that have helped me a ton
-published: true
+draft: false
 ---
 
 ## Change Color Picker mode

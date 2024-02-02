@@ -19,7 +19,7 @@ useSeoMeta({
 
 const { data: articles } = await useAsyncData("all-articles", () =>
   queryContent("/articles")
-  .where({ published: true })
+  .where({ draft: {$ne: true} })
   .sort({ date: -1 }).find()
 );
 </script>

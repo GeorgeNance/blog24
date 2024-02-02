@@ -7,7 +7,7 @@ updatedAt: 2020-08-13
 slug: 'archive/2017/deadlines-are-important'
 description: The ultimate inspiration is the deadline.
 archived: true
-published: true
+draft: false
 ---
 
 ![Dead Lines](https://i.imgur.com/cECxC8A.jpg)

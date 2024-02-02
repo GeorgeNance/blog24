@@ -5,7 +5,7 @@ tags: ['novice', 'essay']
 slug: open-letter-new-programmers
 cover_image: cover.jpg
 description: Programming is more about the ability to love learning than it is about remembering what you have learned
-published: true
+draft: false
 ---
 
 Dear weary novice programmer,

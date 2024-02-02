@@ -3,7 +3,7 @@ title: 'Now'
 date: 2024-02-01
 slug: now
 description: What I am currently doing
-published: true
+draft: false
 ---
 
 - Working as a developer for Vivid Racing.

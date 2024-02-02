@@ -5,7 +5,7 @@ tags: ['adhd', 'productivity']
 slug: being-productive-programmer-adhd
 cover_image: cover.jpg
 description: Being productive while having ADHD  can sometimes feel like a colossal task. So I compiled a list of methods that will help you stay focused as a programmer.
-published: true
+draft: false
 ---
 
 Being productive while having ADHD can sometimes feel like a colossal task. When I was rediagnosed with ADHD as an adult, I began to research ways to be more productive that are inattentive friendly.
@@ -90,7 +90,7 @@ While this behavior is effective at getting results, we can find ourselves in a 
 
 Okay, this one might stir up controversy, that’s why I saved it for last. Let me preface this with I am not a doctor and you should talk to yours if you are thinking about medication.
 
-<Callout title="Personal Story Warning">
+::callout{title="Personal Story Warning"}
 
 _For me, medication has been the most effective tool_
 
@@ -104,8 +104,7 @@ The first time I took medication, I cried. For the first time in my life, everyt
 My life was equivalent to everyone's New Years' weight loss goal. I believed I didn’t have the discipline to get anything done. I knew I wasn’t lazy. I felt like I was **working 2x** as hard as everyone to only get half as much work done.
 
 So when I started using medication, all those systems that did not stick began to click. Life went from being an unpredictable blur to being able to think clearly. It felt like putting glasses on for the first time.
-
-</Callout>
+::
 
 Medication is not for everyone, many people with ADHD live successful lives without it. But you should know that it’s an option.
 
