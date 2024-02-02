@@ -14,7 +14,7 @@
               class="relative px-3 py-4 flex items-center justify-center transition hover:text-primary-500 dark:hover:text-primary-400"
               active-class="text-primary-600 dark:text-primary-400"
             >
-              <Icon aria-hidden="true" :name="item.icon" class="w-5 h-5 z-10" />
+              <Icon aria-hidden="true" :name="item.icon" class="w-8 h-8 z-10 md:w-5 md:h-5" />
               <h5 class="ml-2 mb-0 md:flex hidden" >{{ item.name }}</h5>
               <span
                 v-if="$route.path === item.path"
