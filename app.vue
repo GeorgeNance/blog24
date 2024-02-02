@@ -25,11 +25,11 @@ useHead({
 
 .page-leave-to {
   opacity: 0;
-  transform: translateX(-5px);
+  transform: translateY(-5px);
 }
 
 .page-enter-from {
   opacity: 0;
-  transform: translateX(5px);
+  transform: translateY(5px);
 }
 </style>
