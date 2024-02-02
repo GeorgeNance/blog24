@@ -1,10 +1,11 @@
 ---
 title: 'A useful shell command for killing processes by port'
-published: 2024-02-01
+date: 2024-02-01
 tags: ['productivity']
 slug: useful-function-killing-process-port
 cover_image: cover.jpg
 description: Heres a cool command
+published: true
 ---
 
 Hey everyone, I want to share with you a commandline function that helps quickly kill processes by their port. Some of the servers I start up love to stay running in the background after I closed them. So I often get errors that say something like:

@@ -1,10 +1,11 @@
 ---
 title: 'The Apps I Use'
-published: 2020-11-28
+date: 2020-11-28
 cover_image: cover.jpg
 tags: ['productivity','tools','adhd']
 slug: apps-i-use
 description: I have assembled a list of great apps that I use everyday that make my life easier
+published: true
 ---
 
 Staying productive in a digital world can be hard without the right tools. I have assembled a list of great apps that I use everyday that make my life easier. 

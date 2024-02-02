@@ -22,9 +22,10 @@
 <script lang="ts" setup>
 const { data: articles } = await useAsyncData("articles-home", () =>
   queryContent("/articles")
-    .sort({ published: -1 })
+    .where({ published: true })
+    .sort({ date: -1 })
     .limit(3)
-    .only(["title", "description", "published", "slug", "_path"])
+    .only(["title", "description", "date", "slug", "_path"])
     .find()
 );
 </script>

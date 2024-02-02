@@ -6,7 +6,7 @@
 		<ContentDoc v-slot="{ doc }" tag="article">
 		  <article>
 			<h1>Right now, I am</h1>
-			<small>Updated: {{getReadableDate(doc.published)}}</small>
+			<small>Updated: {{getReadableDate(doc.date)}}</small>
 			<ContentRenderer :value="doc" />
 		  </article>
 		</ContentDoc>

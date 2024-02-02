@@ -1,10 +1,11 @@
 ---
 title: '7 Reasons you SHOULD write CSS'
-published: 2020-10-30
+date: 2020-10-30
 tags: ['css']
 slug: write-more-css
 cover_image: cover.png
 description: SASS, LESS, and Stylus are becoming more irrelevant as CSS becomes more powerful.
+published: true
 ---
 
 This article is in response to this [post](https://dev.to/workflo30292556/10-reasons-why-you-should-stop-writing-css-203c) on DEV.

@@ -8,10 +8,10 @@
       </h2>
       <time
         class="relative z-10 order-first mb-1 flex items-center text-sm text-gray-600 dark:text-gray-400"
-        :datetime="article.published"
+        :datetime="article.date"
         >
         <Icon aria-hidden="true" name="solar:calendar-outline" class="w-3 h-3 z-10 mr-1" />
-        {{ getReadableDate(article.published) }}
+        {{ getReadableDate(article.date) }}
       </time>
       <p class="relative z-10 text-sm text-gray-600 dark:text-gray-400">
         {{ article.description }}

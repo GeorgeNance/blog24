@@ -1,11 +1,12 @@
 ---
 title: Don’t use frontmatter to seperate your markdown files in GatsbyJS - Use the file system
-published: 2020-08-27
+date: 2020-08-27
 cover_image: cover.jpg
 slug: dont-use-frontmatter-markdown-files-gatsby
 category: gatsby
 tags: [gatsby, tips]
 description: I am going to walk you through how to seperate your markdown files in Gatsby in a way that more sense then a frontmatter field
+published: true
 ---
 
 - [Introduction](#introduction)
@@ -186,7 +187,7 @@ query {
         }
         frontmatter {
           title
-          published
+          date
           slug
           date(formatString: "MMMM DD, YYYY")
         }

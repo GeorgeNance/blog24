@@ -7,7 +7,7 @@
         <article>
           <h1>{{ doc.title }}</h1>
           <div class="text-center">
-            <time class="text-gray-600 dark:text-gray-500" :datetime="doc.published">{{ getReadableDate(doc.published) }}</time>
+            <time class="text-gray-600 dark:text-gray-500" :datetime="doc.date">{{ getReadableDate(doc.date) }}</time>
           </div>
 
           <ContentRenderer :value="doc" />

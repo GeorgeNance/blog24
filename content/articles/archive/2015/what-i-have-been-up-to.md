@@ -1,9 +1,10 @@
 ---
 title: 'What I have been up to.'
-published: 2015-05-27
+date: 2015-05-27
 slug: what-i-have-been-up-to
 archived: true
 type: article
+published: true
 ---
 
 Posted on 27 May 2015
