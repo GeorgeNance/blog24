@@ -40,7 +40,10 @@ But if you accept that your first works will suck, you will grow and learn what 
 
 Learning to program is not about learning how to use the latest Javascript libraries. Its not about learning how binary works (Though that’s not a bad path). Its not even about learning a language . Learning to program is an entire shifting of the way you think.
 
-![The Matrix](https://media1.tenor.com/images/5505bcb204761c1f9c979a085d5fd4ec/tenor.gif?itemid=8390287 'At a certain point, you don't even see what normal people see looking at code')
+![The Matrix](https://media1.tenor.com/images/5505bcb204761c1f9c979a085d5fd4ec/tenor.gif?itemid=8390287)
+<small>
+At a certain point, you don't even see what normal people see looking at code
+</small>
 
 Here’s the thing about computers. Computers are purely logical. A computer will do what it's told. A computer knows only the information its given. If your program is not doing something you want, this means you need to step through how the computer is interpreting what's being told.
 
