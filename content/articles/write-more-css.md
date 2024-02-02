@@ -56,10 +56,7 @@ width: calc(100% - 30px);
 
 Flexbox and CSS Grid have made designing for the web an absolute treat.  A basic bootstrap grid system can be created with a few lines of code. You no longer need to use a framework to create a responsive website.
 
-<iframe height="400" style="width: 100%;" scrolling="no" title="CSS Grid - Holy Grail 2" src="https://codepen.io/geoffgraham/embed/rjrLXB?height=338&theme-id=dark&default-tab=css,result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-  See the Pen <a href='https://codepen.io/geoffgraham/pen/rjrLXB'>CSS Grid - Holy Grail 2</a> by Geoff Graham
-  (<a href='https://codepen.io/geoffgraham'>@geoffgraham</a>) on <a href='https://codepen.io'>CodePen</a>.
-</iframe>
+
 
 ## 6. It’s the standard to style the web. 
 
