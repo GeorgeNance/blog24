@@ -1,9 +1,10 @@
 <template>
-  <div ref="headerRef" :style="styles" class="fixed top-0 w-full z-50 text-gray-800 shadow-lg bg-white/90 shadow-gray-800/5 ring-1 backdrop-blur dark:bg-slate-800/90 dark:text-gray-200 dark:ring-white/20 ring-gray-900/5">
+  <div ref="headerRef" :style="styles" class="fixed top-0 w-full z-50 text-gray-800 shadow-lg bg-white/90 shadow-gray-800/5 ring-2 backdrop-blur dark:bg-slate-800/90 dark:text-gray-400 dark:ring-white/20 ring-gray-900/5 ">
     <nav class="mx-auto px-4 sm:px-6 max-w-2xl">
       <ul
         class="flex items-center justify-center text-sm font-medium "
       >
+
         <li v-for="item in items" :key="item.path">
           <UTooltip
             :text="item.name"
@@ -11,10 +12,10 @@
           >
             <ULink
               :to="item.path"
-              class="relative px-3 py-4 flex items-center justify-center transition hover:text-primary-500 dark:hover:text-primary-400"
+              class="relative px-3 py-4 flex items-center justify-center transition hover:text-primary-500 dark:hover:text-primary-200"
               active-class="text-primary-600 dark:text-primary-400"
             >
-              <Icon aria-hidden="true" :name="item.icon" class="w-8 h-8 z-10 md:w-5 md:h-5" />
+              <Icon aria-hidden="true" :name="item.icon" class="w-8 h-8 z-10 md:w-7 md:h-7" />
               <h5 class="ml-2 mb-0 md:flex hidden" >{{ item.name }}</h5>
               <span
                 v-if="$route.path === item.path"
@@ -63,11 +64,11 @@ const items = [
     icon: "solar:watch-square-minimalistic-outline",
   },
   // { name: "Lab", path: "/lab", icon: "heroicons:beaker" },
-  // {
-  //   name: "Bag",
-  //   path: "/whats-in-my-bag",
-  //   icon: "solar:backpack-outline",
-  // },
+  {
+    name: "Bag",
+    path: "/whats-in-my-bag",
+    icon: "solar:backpack-outline",
+  },
   {
     name: "Bookmarks",
     path: "/bookmarks",
