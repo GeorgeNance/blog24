@@ -10,6 +10,7 @@
 			  <div class="mt-10">
         <ContentRenderer :value="doc" />
         </div>  
+        <a href="https://nownownow.com/about"> Whats a Now Page?</a>
 		  </article>
 		</ContentDoc>
 	  </div>
