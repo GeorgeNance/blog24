@@ -66,7 +66,7 @@ const items = [
   // { name: "Lab", path: "/lab", icon: "heroicons:beaker" },
   {
     name: "Bag",
-    path: "/whats-in-my-bag",
+    path: "/bag",
     icon: "solar:backpack-outline",
   },
   {
