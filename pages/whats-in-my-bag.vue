@@ -33,11 +33,16 @@ useSeoMeta({
   title: "Things I use",
   description,
 });
-const { data: items } = await useAsyncData("uses", () =>
-  queryContent("/uses").find()
+const { data: uses } = await useAsyncData("uses", () =>
+  queryContent("uses").findOne()
 );
-const hardware = items.value.filter((item) => item.category === "hardware");
-const software = items.value.filter((item) => item.category === "software");
-const desk = items.value.filter((item) => item.category === "desk");
-const other = items.value.filter((item) => item.category === "others");
+console.log(uses);
+
+// Access each category directly from the `uses.value`
+const hardware = uses.value.hardware;
+const software = uses.value.software;
+const desk = uses.value.desk;
+const other = uses.value.others;
+
+
 </script>

@@ -7,6 +7,9 @@ slug: apps-i-use
 description: I have assembled a list of great apps that I use everyday that make my life easier
 draft: false
 ---
+::callout
+This list is a bit outdated, I recommend looking at [my updated list](/use)
+::
 
 Staying productive in a digital world can be hard without the right tools. I have assembled a list of great apps that I use everyday that make my life easier. 
 

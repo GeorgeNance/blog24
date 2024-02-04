@@ -1,0 +1,55 @@
+{
+  "software": [
+    {
+      "name": "Tableplus",
+      "description": "I was using Sequel Pro for a long time, but it's not being maintained anymore. So I switched to Tableplus and I love it.",
+      "url": "https://tableplus.com/",
+      "category": "software"
+    },
+    {
+      "name": "Obsdian",
+      "description": "Obsdidian is hands down the best note taking app I have used. It's a local first note taking app, which means all your notes are stored on your computer and not on the cloud. It has a lot of features and is highly customizable. The best part is that it's free.",
+      "url": "https://obsidian.md/",
+      "category": "software"
+    },
+    {
+      "name": "Cleanshot",
+      "description": "This may be the most used app on my computer. It's like the default mac screenshot app, but on steroids. It has a lot of features like annotating screenshots, recording screen, etc. It's not free, but it's worth every penny.",
+      "url": "https://cleanshot.com/",
+      "category": "software"
+    }
+  ],
+  "hardware": [
+    {
+      "name": "Status Between 3ANC Onyx",
+      "description": "Before I got these as a gift, I thought the Airpods Pro was the best wireless earbuds. But these are on a whole different level. The sound quality is amazing, the noise cancellation is great, and the battery life is much better than the Airpods Pro. I use these for everything, from listening to music to taking calls. I highly recommend these.",
+      "url": "https://www.amazon.com/Status-Between-Cancelling-Wireless-Earbuds/dp/B0CLFXPYPC/",
+      "category": "hardware",
+      "thumbnail": "/uses/apple-airpods-3.png"
+    },
+    {
+      "name": "Apple iPhone 15 Pro",
+      "description": "I don't update my phone often, so getting the latest iPhone was a big deal for me. I love the camera on this phone and the new 120hz display. Its a much better iPhone 12 Pro Max I had before.",
+      "url": "https://www.apple.com/iphone-15-pro/",
+      "category": "hardware",
+      "thumbnail": "/uses/apple-iphone-12.png"
+    }
+  ],
+  "desk": [
+    {
+      "name": "Rode PodMic",
+      "description": "This is a solid microphone for streaming and discord calls. It requires an interface to work, but the sound quality is great. It's also very affordable for the quality it provides.",
+      "url": "https://www.amazon.com/Rode-PODMIC-Dynamic-Podcasting-Microphone/dp/B07MSCRCVK?th=1",
+      "category": "desk"
+    }
+
+  ],
+  "others": [
+    {
+      "name": "Xbox Series X",
+      "description": "I was a huge fan of the OG xbox, so I had to get this one. I don't play games as much as I used to, but I still enjoy playing games on this console and Game Pass is a great deal.",
+      "url": "https://www.amazon.com/Xbox-1TB-SSD-Console-Controller-Architecture/dp/B08H75RTZ8?th=1",
+      "category": "others"
+    }
+  ]
+}
