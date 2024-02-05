@@ -1,5 +1,8 @@
 <template>
   <NuxtLoadingIndicator color="#14b8a6" />
+  <div class="bg-gradient-to-br dark:from-slate-900 dark:to-slate-800 from-white to-slate-100">
+
+
   <AppNavbar />
   <div class="h-32"></div>
   <UContainer>
@@ -7,6 +10,10 @@
   </UContainer>
   <div class="h-32"></div>
   <AppFooter />
+
+
+
+</div>
 </template>
 
 <script setup lang="ts">

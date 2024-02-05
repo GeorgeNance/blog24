@@ -4,10 +4,14 @@
       class="prose prose-lg dark:prose-invert prose-blockquote:not-italic prose-pre:bg-gray-900 prose-img:ring-1 prose-img:ring-gray-200 dark:prose-img:ring-white/10 prose-img:rounded-lg  "
     >
       <ContentDoc v-slot="{ doc }" tag="article">
+
         <article>
           <h1>{{ doc.title }}</h1>
-          <div class="text-center">
-            <time class="text-gray-600 dark:text-gray-500" :datetime="doc.date">{{ getReadableDate(doc.date) }}</time>
+          <div class=" text-gray-600 dark:text-gray-500">
+            Published on
+            <time class="" :datetime="doc.date">{{ getReadableDate(doc.date) }}</time>
+            <span class="mx-2">❖</span>
+            <span v-if="doc.readingTime">{{ doc.readingTime.text }}</span>
           </div>
 
           <ContentRenderer :value="doc" />
@@ -24,6 +28,13 @@ useSeoMeta({
   twitterCard: "summary_large_image",
   articleAuthor: "George Nance",
 });
+defineOgImageComponent('NuxtSeo', {
+  title: 'Hello OG Image 👋',
+  description: 'Look what at me in dark mode',
+  theme: '#ff0000',
+  colorMode: 'dark',
+})
+
 
 
 const getReadableDate = (dateString) => {

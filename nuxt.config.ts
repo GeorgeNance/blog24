@@ -1,9 +1,16 @@
 export default defineNuxtConfig({
-    routeRules: {
-      '/delete-untracked-files-git': { redirect: '/articles/delete-untracked-files-git' },
-      '/being-productive-programmer-adhd': { redirect: '/articles/being-productive-programmer-adhd', },
-      '/latest': { redirect: '/articles' },
+  site: {
+    url: 'https://GeorgeNance.com',
+    name: 'George Nance',
+    description: 'George Nance is a software engineer, writer, and creator. He writes about software development, productivity, and personal growth.',
+    defaultLocale: 'en', // not needed if you have @nuxtjs/i18n installed
   },
+  routeRules: {
+    '/delete-untracked-files-git': { redirect: '/articles/delete-untracked-files-git' },
+    '/being-productive-programmer-adhd': { redirect: '/articles/being-productive-programmer-adhd', },
+    '/latest': { redirect: '/articles' },
+  },
+  css: ['~/assets/css/main.css'],
   devtools: { enabled: true },
   modules: [
     "@nuxt/ui",
@@ -13,7 +20,8 @@ export default defineNuxtConfig({
     "@nuxt/image",
     "@nuxt/content",
     "@nuxthq/studio",
-    "@vueuse/nuxt"
+    "@vueuse/nuxt",
+    '@nuxtjs/seo'
   ],
   ui: {
     icons: ["heroicons", "lucide"],
@@ -28,7 +36,7 @@ export default defineNuxtConfig({
         class: "h-full",
       },
       bodyAttrs: {
-        class: "antialiased text-slate-500 dark:text-slate-400 bg-white dark:bg-slate-900 min-h-screen",
+        class: "antialiased text-slate-500 dark:text-slate-400 min-h-screen h-full ",
       },
     },
   },
@@ -36,6 +44,11 @@ export default defineNuxtConfig({
     highlight: {
       theme: "github-dark",
     },
+
+    markdown: {
+      remarkPlugins: ['remark-reading-time'],
+    },
+
   },
   googleFonts: {
     display: "swap",
