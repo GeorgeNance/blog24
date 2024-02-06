@@ -1,13 +1,14 @@
 <template>
   <div class="space-y-6 flex content-center flex-col">
-    <NuxtImg src="/avatar.jpg" alt="George Nance"
-      class="ring-2 border mx-auto ring-gray-200 border-gray-300 dark:ring-white/10 dark:border-gray-800 hover:ring-4 transition-all duration-300 bg-gray-200 dark:bg-gray-900 rounded-full h-24 w-24 sm:h-16 sm:w-16"
-      sizes="48px sm:64px" placeholder format="webp" />
+    <NuxtImg ref="avatar" src="/avatar.jpg" alt="George Nance" draggable="false"
+      class="ring-2 border mx-auto ring-gray-200 border-gray-300 dark:ring-primary/10 dark:border-gray-800 hover:ring-4 transition-all duration-300 bg-gray-200 dark:bg-gray-900 rounded-full h-16 w-16 md:h-32 md:w-32 "
+      sizes="48px md:128px" placeholder format="webp" />
+      
     <h1 class="text-xl font-bold tracking-tight text-gray-800 dark:text-gray-100 text-center">
-      Welcome!
+      Welcome!👋
     </h1>
-    <p class="text-gray-900 dark:text-gray-300">
-       I'm George Nance, a Full Stack Web Developer from the sunny landscapes of Phoenix, Arizona, with roots in Illinois where my journey in technology began with a Computer Science degree. My passion lies in leveraging the latest technologies to craft accessible, engaging experiences. This portfolio reflects my professional path and personal projects, all aimed at fostering connection and growth within the digital realm. Thank you for visiting, and I'm eager to explore how we can shape the future of the web together. 👋
+    <p ref="description" class="text-gray-900 dark:text-gray-300">
+       I'm George Nance, a Full Stack Web Developer from Chandler, Arizona.  My passion lies in leveraging the latest technologies to craft accessible, engaging experiences. 
     </p>
     <p class="text-gray-900 dark:text-gray-300">
       By day, I'm a Fullstack Developer at
@@ -19,9 +20,15 @@
 </template>
 
 <script setup>
+
 useSeoMeta({
-  title: "George Nance",
+  title: "Home",
   description:
     " I'm George Nance, a Full Stack Web Developer from the sunny landscapes of Phoenix, Arizona. My passion lies in leveraging the latest technologies to craft accessible, engaging experiences.",
 });
+
+// Grab mouse position
+
+
+
 </script>

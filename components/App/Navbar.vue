@@ -1,5 +1,5 @@
 <template>
-  <div ref="headerRef" :style="styles" class="fixed top-0 w-full z-50 text-gray-800 shadow-lg bg-white/90 shadow-gray-800/5 ring-2 backdrop-blur dark:bg-slate-800/90 dark:text-gray-400 dark:ring-white/20 ring-gray-900/5 ">
+  <div ref="headerRef" :style="styles" class="fixed top-0 w-full z-50 text-gray-800 shadow-lg bg-white/90 shadow-gray-800/5 backdrop-blur dark:bg-slate-800/90 dark:text-gray-400  ">
     <nav class="mx-auto px-4 sm:px-6 max-w-2xl">
       <ul
         class="flex items-center justify-center text-sm font-medium "
@@ -17,14 +17,14 @@
             >
               <Icon aria-hidden="true" :name="item.icon" class="w-8 h-8 z-10 md:w-7 md:h-7" />
               <h5 class="ml-2 mb-0 md:flex hidden" >{{ item.name }}</h5>
-              <span
-                v-if="$route.path === item.path"
-                class="absolute inset-x-1 -bottom-px h-px bg-gradient-to-r from-primary-500/0 via-primary-500/70 to-primary-500/0 dark:from-primary-400/0 dark:via-primary-400/40 dark:to-primary-400/0"
-              ></span>
               <!-- <span
                 v-if="$route.path === item.path"
-                class="absolute h-8 w-8 z-0 rounded-full bg-gray-100 dark:bg-white/10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+                class="absolute inset-x-1 -bottom-px h-px bg-gradient-to-r from-primary-500/0 via-primary-500/70 to-primary-400/0 dark:from-primary-400/0 dark:via-primary-400/40 dark:to-primary-400/0"
               ></span> -->
+              <span
+                v-if="$route.path === item.path"
+                class="absolute w-full h-12 z-0 rounded-full bg-gray-100 dark:bg-primary-300/10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+              ></span>
               <span class="sr-only">{{ item.name }}</span>
             </ULink>
           </UTooltip>
@@ -69,10 +69,10 @@ const items = [
     path: "/bag",
     icon: "solar:backpack-outline",
   },
-  {
-    name: "Bookmarks",
-    path: "/bookmarks",
-    icon: "solar:bookmark-linear",
-  },
+  // {
+  //   name: "Bookmarks",
+  //   path: "/bookmarks",
+  //   icon: "solar:bookmark-linear",
+  // },
 ];
 </script>

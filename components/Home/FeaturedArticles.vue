@@ -3,7 +3,7 @@
     <h2 class="uppercase text-xs font-semibold dark:text-gray-300 text-gray-500 mb-6">
       RECENT ARTICLES
     </h2>
-    <ul class="space-y-16">
+    <ul class="space-y-8">
       <li v-for="(article, id) in articles" :key="id">
         <AppArticleCard :article="article" />
       </li>
