@@ -26,6 +26,7 @@
     "@nuxt/image": "1.1.0",
     "@nuxt/ui": "2.11.1",
     "remark-reading-time": "^2.0.1",
+    "swiper": "^11.0.6",
     "vue-use-fixed-header": "^2.0.0"
   }
 }

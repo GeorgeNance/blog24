@@ -3,13 +3,11 @@
   <div class="bg-gradient-to-br dark:from-slate-900 dark:to-slate-800 from-white to-slate-100">
 
 
-  <AppNavbar />
-  <div class="h-32"></div>
-  <UContainer>
+
+  <NuxtLayout>
     <NuxtPage />
-  </UContainer>
-  <div class="h-32"></div>
-  <AppFooter />
+  </NuxtLayout>
+
 
 
 
