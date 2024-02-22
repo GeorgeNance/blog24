@@ -23,7 +23,7 @@ draft: false
 
 I have a link to the code I used for this tutorial on [github](https://github.com/GeorgeNance/seperating-markdown-by-folder-example)
 
-I am going to walk you through how to seperate your markdown files in Gatsby in a way that more sense then a frontmatter field.
+I am going to walk you through how to seperate your markdown files in Gatsby in a way that makes more sense then a frontmatter field.
 
 ### How splitting up markdown is normally done
 
