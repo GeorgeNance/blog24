@@ -23,18 +23,16 @@
 const route = useRoute();
 const { slug } = route.params;
 
-const { page } = useContent()
 
-let article = page.value;
 useSeoMeta({
   twitterCard: "summary_large_image",
   articleAuthor: "George Nance",
 });
 
 defineOgImageComponent('NuxtSeo', {
-  title: article.title,
-  description: article.description,
-  // theme: '#ff0000',
+  title: 'Hello OG Image 👋',
+  description: 'Look what at me in dark mode',
+  theme: '#ff0000',
   colorMode: 'dark',
 
 })

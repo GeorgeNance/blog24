@@ -11,7 +11,13 @@ export default defineNuxtConfig({
     '/latest': { redirect: '/articles' },
   },
   css: ['~/assets/css/main.css'],
-  devtools: { enabled: true },
+  devtools: {
+    enabled: true,
+
+    timeline: {
+      enabled: true,
+    },
+  },
   modules: [
     "@nuxt/ui",
     "nuxt-icon",
@@ -41,7 +47,6 @@ export default defineNuxtConfig({
     },
   },
   content: {
-    documentDriven: true,
     highlight: {
       theme: "github-dark",
     },

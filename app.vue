@@ -4,14 +4,18 @@
 
 
 
-  <NuxtLayout>
-    <NuxtPage />
-  </NuxtLayout>
+    <AppNavbar />
+    <div class="h-32"></div>
+    <UContainer class="z-10">
+      <NuxtPage />
+    </UContainer>
+    <div class="h-32"></div>
+    <AppFooter />
 
 
 
 
-</div>
+  </div>
 </template>
 
 <script setup lang="ts">
