@@ -42,7 +42,7 @@ button{
 ## 3. CSS supports imports.
 For the longest time you would have one giant CSS file for everything, but modern CSS allows you to import CSS files. I have began to separate my CSS files to help keep my code more organized. 
 
-![Screenshot of code showing CSS variables ](css-vars.png)
+![Screenshot of code showing CSS variables ](/img/articles/css-vars.png)
 
 ## 4. Calculations are here and they work beautifully. 
 

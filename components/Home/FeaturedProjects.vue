@@ -4,19 +4,10 @@
       FEATURED PROJECTS
     </h2>
     <div class="space-y-4 grid-cols-2">
-      <AppProjectCard
-        v-for="(project, id) in projects"
-        :key="id"
-        :project="project"
-      />
+      <AppProjectCard v-for="(project, id) in projects" :key="id" :project="project" />
     </div>
     <div class="flex items-center justify-center mt-6 text-sm">
-      <UButton
-        label="All Projects &rarr;"
-        to="/projects"
-        variant="link"
-        color="gray"
-      />
+      <NuxtLink label="All Projects &rarr;" to="/projects" variant="link" color="gray" />
     </div>
   </div>
 </template>

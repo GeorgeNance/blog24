@@ -28,7 +28,7 @@ Untracked files huh? Okay, that doesn't sound too difficult. You should be able 
 
 They are still there! _What gives !?_
 
-![wait what](https://media.giphy.com/media/IMuqnp96sdhyE/giphy.gif)
+![wait what](/img/articles/https://media.giphy.com/media/IMuqnp96sdhyE/giphy.gif)
 
 The reason is because `git reset --hard` **only removes files that are already a part of the repo**
 

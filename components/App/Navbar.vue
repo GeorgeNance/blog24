@@ -13,23 +13,23 @@
         <ul :class="{ 'hidden': !isMobileMenuOpen, 'flex': isMobileMenuOpen }"
             class="flex-col md:flex-row md:flex items-center justify-center text-sm font-medium md:space-x-4 w-full">
           <li class="md:flex-1">
-            <ULink to="/"
-                   class="px-3 py-4 flex items-center justify-center transition hover:text-primary-500 dark:hover:text-primary-200"
-                   active-class="text-primary-600 dark:text-primary-400">
+            <NuxtLink to="/"
+                      class="px-3 py-4 flex items-center justify-center transition hover:text-primary-500 dark:hover:text-primary-200"
+                      active-class="text-primary-600 dark:text-primary-400">
               <Icon aria-hidden="true" name="solar:home-smile-outline" class="w-4 h-4 z-10 md:w-4 md:h-4" />
               <h5 class="ml-2 mb-0">Home</h5>
-            </ULink>
+            </NuxtLink>
           </li>
           <li v-for="item in items" :key="item.path" class="md:flex-1">
             <template v-if="!item.items">
-              <UTooltip :text="item.name" :ui="{ popper: { strategy: 'absolute' } }">
-                <ULink :to="item.path"
-                       class="relative px-3 py-4 flex items-center justify-center transition hover:text-primary-500 dark:hover:text-primary-200"
-                       active-class="text-primary-600 dark:text-primary-400">
-                  <Icon aria-hidden="true" :name="item.icon" class="w-4 h-4 z-10 md:w-4 md:h-4" />
-                  <h5 class="ml-2 mb-0 md:flex">{{ item.name }}</h5>
-                </ULink>
-              </UTooltip>
+
+              <NuxtLink :to="item.path"
+                        class="relative px-3 py-4 flex items-center justify-center transition hover:text-primary-500 dark:hover:text-primary-200"
+                        active-class="text-primary-600 dark:text-primary-400">
+                <Icon aria-hidden="true" :name="item.icon" class="w-4 h-4 z-10 md:w-4 md:h-4" />
+                <h5 class="ml-2 mb-0 md:flex">{{ item.name }}</h5>
+              </NuxtLink>
+
             </template>
             <!-- More Menu -->
             <div v-if="item.items" class="relative md:flex-1 w-full">
@@ -43,12 +43,12 @@
                    :class="{ 'block': isDropdownOpen(item.name), 'hidden': !isDropdownOpen(item.name) }"
                    class="origin-top-left transition transform scale-95 md:scale-100 md:absolute md:right-0 md:mt-2 md:w-48 md:bg-white md:dark:text-white md:dark:bg-slate-700/90 md:shadow-lg md:rounded-md md:py-1 md:backdrop-blur w-full">
                 <ul class="w-full">
-                  <ULink :to="subItem.path" v-for="subItem in item.items" :key="subItem.path">
+                  <NuxtLink :to="subItem.path" v-for="subItem in item.items" :key="subItem.path">
                     <li
                         class="px-6 py-2 hover:bg-gray-700 dark:hover:bg-slate-600 bg-gray-800 dark:bg-slate-700 text-gray-300">
                       {{ subItem.name }}
                     </li>
-                  </ULink>
+                  </NuxtLink>
                 </ul>
               </div>
             </div>

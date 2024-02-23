@@ -14,7 +14,7 @@ To my surprise, there was not much content for adults with it. So I compiled a l
 
 ## Set up your work environment
 
-![Inspiring digital art illustration of exhausted man in front of a computer, with his head down on a desk with subtle colors including coral and blush.](exhausted-man-in-front-of-a-computer.png 'Created by Supriya Bhonsle')
+![Inspiring digital art illustration of exhausted man in front of a computer, with his head down on a desk with subtle colors including coral and blush.](/img/articles/exhausted-man-in-front-of-a-computer.png 'Created by Supriya Bhonsle')
 
 To set up your work environment for success, you need to reduce distractions.
 
@@ -34,7 +34,7 @@ At first, I was skeptical of this system but the more I have used it, the more I
 
 The best approach for bullet journaling is using _good ‘ol pencil and paper_. Digital apps have the flaw of being in an environment that is full of distractions.
 
-![Bullet Journal](bujo.jpg 'Unsplash photo by Isaac Smith')
+![Bullet Journal](/img/articles/bujo.jpg 'Unsplash photo by Isaac Smith')
 
 All you need to get started is:
 
@@ -66,7 +66,7 @@ Pomodora timer is a system to make sure you stay focused on a task followed by a
 
 This is an easy way to ensure that you are giving your mind time to relax and not hyper-focus for too long. Every 25 minutes or so, you take a 5-minute break. Then after 3 “Pomodoras”, you take a 15-minute break. This system forces you to stick to a task with a promised reward of time you can do whatever you want without feeling guilty. That’s the beauty of this system. I’m using one right now while I write this.
 
-![Forest app on iOS](forest.jpeg 'I’m going to plant so many trees!')
+![Forest app on iOS](/img/articles/forest.jpeg 'I’m going to plant so many trees!')
 
 Here are some great apps that use Pomodoro:
 

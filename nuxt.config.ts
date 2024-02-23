@@ -19,7 +19,8 @@ export default defineNuxtConfig({
     },
   },
   modules: [
-    "@nuxt/ui",
+    // "@nuxt/ui",
+    '@nuxtjs/tailwindcss',
     "nuxt-icon",
     "@nuxtjs/google-fonts",
     "@nuxtjs/fontaine",
@@ -29,9 +30,7 @@ export default defineNuxtConfig({
     "@vueuse/nuxt",
     '@nuxtjs/seo'
   ],
-  ui: {
-    icons: ["heroicons", "lucide"],
-  },
+
   app: {
     pageTransition: { name: "page", mode: "out-in" },
     head: {

@@ -55,7 +55,7 @@ I wanted to simplify how my blog generated articles so I could focus on creating
 
 And I already had a folder structure like this:
 
-![](./my-folder-structure.png)
+![](/img/articles/./my-folder-structure.png)
 
 _Wouldn’t it be nice if GatsbyJS knew if a markdown file was a page or blog post based on the folder it's in?_
 

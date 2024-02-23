@@ -9,12 +9,7 @@
       </li>
     </ul>
     <div class="flex items-center justify-center mt-6 text-sm">
-      <UButton
-        label="All Articles &rarr;"
-        to="/articles"
-        variant="link"
-        color="gray"
-      />
+      <NuxtLink label="All Articles &rarr;" to="/articles" variant="link" color="gray" />
     </div>
   </div>
 </template>
@@ -23,7 +18,7 @@
 const { data: articles } = await useAsyncData("articles-home", () =>
   queryContent("/articles")
     .sort({ date: -1 })
-    .where({ draft: {$ne: true} })
+    .where({ draft: { $ne: true } })
     .limit(3)
     .only(["title", "description", "date", "slug", "_path", "readingTime"])
     .find()

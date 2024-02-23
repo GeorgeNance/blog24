@@ -35,8 +35,8 @@ import 'swiper/swiper-bundle.css'; // Ensure Swiper's CSS is imported
 
 const images = ref([
 	// Populate with your images
-	{ src: '/images/gallery/goodbye-love.webp', alt: 'Image 1', caption: 'Goodbye Love - Created with SDXL' },
-	{ src: '/images/gallery/goodbye-love.webp', alt: 'Image 2', caption: 'Caption 2' },
+	{ src: '/img/gallery/goodbye-love.webp', alt: 'Image 1', caption: 'Goodbye Love - Created with SDXL' },
+	{ src: '/img/gallery/goodbye-love.webp', alt: 'Image 2', caption: 'Caption 2' },
 	// Add more images as needed
 ]);
 
