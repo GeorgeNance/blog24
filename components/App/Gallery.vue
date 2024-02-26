@@ -1,7 +1,8 @@
 <template>
 	<div class="gallery grid grid-cols-1 md:grid-cols-3 gap-4">
 		<div v-for="(image, index) in images" :key="index"
-			 class="item cursor-pointer flex justify-center content-center flex-col" @click="openLightbox(index)">
+			 class="item cursor-pointer flex justify-center content-center flex-col" @click="openLightbox(index)" v-motion
+			 :initial="{ opacity: 0, y: 100 }" :enter="{ opacity: 1, y: 0, scale: 1 }" :hovered="{ scale: 1.05 }">
 			<nuxt-img :src="image.src" :alt="image.alt" placeholder
 					  class="object-cover h-48 w-auto mx-auto hover:ring ring-slate-400 rounded" loading="lazy" />
 			<!-- <p class="caption mt-2 text-center">{{ image.caption }}</p> -->
@@ -15,7 +16,8 @@
 				@click="closeLightbox">
 			&times;
 		</button>
-		<div class="lightbox-content py-12">
+		<div class="lightbox-content py-12" v-motion :initial="{ opacity: 0, scale: 0 }"
+			 :visible-once="{ opacity: 1, scale: 0, scale: 1 }">
 			<swiper :auto-height="true" :keyboard="{ enabled: true, onlyInViewport: true }" :initial-slide="lightbox.index"
 					:slides-per-view="1">
 				<swiper-slide v-for="(image, index) in images" :key="`slide-${index}`">

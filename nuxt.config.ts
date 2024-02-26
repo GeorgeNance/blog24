@@ -28,7 +28,9 @@ export default defineNuxtConfig({
     "@nuxt/content",
     "@nuxthq/studio",
     "@vueuse/nuxt",
-    '@nuxtjs/seo'
+    '@nuxtjs/seo',
+    '@vueuse/nuxt',
+    '@vueuse/motion/nuxt'
   ],
 
   app: {

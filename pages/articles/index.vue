@@ -3,7 +3,8 @@
     <AppHeader class="mb-16" title="Articles" :description="description" />
     <ul class="space-y-16">
       <li v-for="(article, id) in articles" :key="id">
-        <AppArticleCard :article="article" />
+
+        <AppArticleCard :article="article" :delay-animation="id * 100" />
       </li>
     </ul>
   </main>
@@ -19,7 +20,7 @@ useSeoMeta({
 
 const { data: articles } = await useAsyncData("all-articles", () =>
   queryContent("/articles")
-  .where({ draft: {$ne: true} })
-  .sort({ date: -1 }).find()
+    .where({ draft: { $ne: true } })
+    .sort({ date: -1 }).find()
 );
 </script>
