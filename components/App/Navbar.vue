@@ -1,15 +1,14 @@
 <template>
-  <div ref="headerRef" :style="styles" :class="{ 'dark': isDark }"
-       class="bg-white dark:bg-gray-800 fixed top-0 w-full z-50">
+  <div ref="headerRef" :style="styles" class="bg-white dark:bg-slate-800/90 fixed top-0 w-full z-50 backdrop-blur">
     <nav class="border-b border-gray-100 dark:border-gray-700">
       <div class="max-w-6xl mx-auto px-4">
         <div class="flex justify-between">
           <!-- logo -->
           <div>
-            <a href="#"
-               class="flex items-center py-5 px-2 text-gray-700 hover:text-gray-900 dark:text-gray-200 dark:hover:text-white">
+            <NuxtLink href="/"
+                      class="flex items-center py-5 px-2 text-gray-700 hover:text-gray-900 dark:text-gray-200 dark:hover:text-white">
               <span class="font-bold">George Nance</span>
-            </a>
+            </NuxtLink>
           </div>
           <!-- mobile menu button -->
           <div class="md:hidden flex items-center">
@@ -46,7 +45,7 @@
             <NuxtLink :to="item.link" class="block py-2 px-4 text-sm hover:bg-gray-200 dark:hover:bg-gray-700">{{
               item.label }}</NuxtLink>
           </button>
-          <div v-if="item.submenu && item.submenu.length" v-show="item.isSubMenuActive" class="pl-4">
+          <div v-if="item.submenu && item.submenu.length" v-show="item.isSubMenuActive" class="pl-4 my-2">
             <NuxtLink v-for="subItem in item.submenu" :key="subItem.label" :to="subItem.link"
                       class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-200 dark:text-gray-200 dark:hover:bg-gray-700"
                       :class="{ 'active-menu-item': route.path === item.link }">
