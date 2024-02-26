@@ -2,18 +2,22 @@
   <div>
     <h2 class="uppercase text-xs font-semibold dark:text-gray-300 text-gray-500 mb-4">FIND ME ON</h2>
     <div class="space-y-5 flex flex-row justify-evenly">
-      <NuxtLink
-        v-for="link in links"
-        :key="link.icon"
-        :to="link.url"
-        target="_blank"
-        external
-        class="flex items-end gap-2 dark:hover:text-gray-200 group hover:text-gray-600"
-      >
-              <Icon :name="link.icon" class="w-6 h-6 mr-1"></Icon>
-        <span class="text-sm">
-          {{ link.name }}
-        </span>
+      <NuxtLink v-for="link in links" :key="link.icon" :to="link.url" target="_blank" external
+                class="flex items-end gap-2 dark:hover:text-gray-200 group hover:text-gray-600">
+        <div v-motion :enter="{
+          opacity: 1,
+          y: 0,
+          scale: 1,
+        }" :hovered="{
+  scale: 1.05,
+
+}">
+          <Icon :name="link.icon" class="w-6 h-6 mr-1"></Icon>
+          <span class="text-sm">
+            {{ link.name }}
+          </span>
+        </div>
+
 
 
       </NuxtLink>
