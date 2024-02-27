@@ -1,26 +1,24 @@
 {
-    "files.associations": {
-        "*.css": "tailwindcss"
-    },
+  "files.associations": {
+    "*.css": "tailwindcss"
+  },
+  "editor.quickSuggestions": {
+    "strings": true
+  },
+  "tailwindCSS.experimental.configFile": "tailwind.config.ts",
+  "tailwindCSS.experimental.classRegex": [
+    ["ui:\\s*{([^)]*)\\s*}", "[\"'`]([^\"'`]*).*?[\"'`]"],
+    ["/\\*ui\\*/\\s*{([^;]*)}", ":\\s*[\"'`]([^\"'`]*).*?[\"'`]"]
+  ],
+  "tailwindCSS.classAttributes": ["class", "className", "ngClass", "ui"],
+  "gitlens.currentLine.enabled": false,
+  "[markdown]": {
     "editor.quickSuggestions": {
-        "strings": true
+      "other": "off",
+      "comments": "off",
+      "strings": "off"
     },
-    "tailwindCSS.experimental.configFile": "tailwind.config.ts",
-    "tailwindCSS.experimental.classRegex": [
-        [
-            "ui:\\s*{([^)]*)\\s*}",
-            "[\"'`]([^\"'`]*).*?[\"'`]"
-        ],
-        [
-            "/\\*ui\\*/\\s*{([^;]*)}",
-            ":\\s*[\"'`]([^\"'`]*).*?[\"'`]"
-        ]
-    ],
-    "tailwindCSS.classAttributes": [
-        "class",
-        "className",
-        "ngClass",
-        "ui"
-    ],
-    "gitlens.currentLine.enabled": false
+    "editor.suggest.showKeywords": false,
+    "editor.suggestOnTriggerCharacters": false
+  }
 }

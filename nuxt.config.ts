@@ -11,8 +11,8 @@ export default defineNuxtConfig({
     '/latest': { redirect: '/articles' },
     '/about': { redirect: '/' },
     '/contact': { redirect: '/' },
-    'write-more-css': { redirect: '/articles/write-more-css' },
-    'dont-use-frontmatter-markdown-files-gatsby': { redirect: '/articles/dont-use-frontmatter-markdown-files-gatsby' },
+    '/write-more-css': { redirect: '/articles/write-more-css' },
+    '/dont-use-frontmatter-markdown-files-gatsby': { redirect: '/articles/dont-use-frontmatter-markdown-files-gatsby' },
 
   },
   css: ['~/assets/css/main.css'],
