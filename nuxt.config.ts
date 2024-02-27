@@ -9,6 +9,11 @@ export default defineNuxtConfig({
     '/delete-untracked-files-git': { redirect: '/articles/delete-untracked-files-git' },
     '/being-productive-programmer-adhd': { redirect: '/articles/being-productive-programmer-adhd', },
     '/latest': { redirect: '/articles' },
+    '/about': { redirect: '/' },
+    '/contact': { redirect: '/' },
+    'write-more-css': { redirect: '/articles/write-more-css' },
+    'dont-use-frontmatter-markdown-files-gatsby': { redirect: '/articles/dont-use-frontmatter-markdown-files-gatsby' },
+
   },
   css: ['~/assets/css/main.css'],
   devtools: {
