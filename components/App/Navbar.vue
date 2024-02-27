@@ -80,7 +80,7 @@ const menuItems = ref([
   { label: 'Projects', link: '/projects', submenu: [], isSubMenuActive: false },
   {
     label: 'More', link: '', submenu: [
-      { label: 'Gallery', link: '/gallery' },
+      // { label: 'Gallery', link: '/gallery' },
       { label: 'Bag', link: '/bag' },
     ], isSubMenuActive: false
   },
