@@ -18,6 +18,11 @@
       </ContentDoc>
     </div>
   </main>
+  <div class="mt-32  text-center">
+    <p> Thank you for reading! If you got any value from this, please share it 😌</p>
+    <HomeSocialLinks class="mt-4" />
+
+  </div>
 </template>
 <script setup>
 const route = useRoute();

@@ -1,7 +1,7 @@
 <template>
   <div ref="headerRef" :style="styles" class="bg-white dark:bg-slate-800/90 fixed top-0 w-full z-50 backdrop-blur">
     <nav class="border-b border-gray-100 dark:border-gray-700">
-      <div class="max-w-6xl mx-auto px-4">
+      <div class="max-w-4xl mx-auto px-4">
         <div class="flex justify-between">
           <!-- logo -->
           <div>
@@ -19,7 +19,7 @@
               </svg>
             </button>
           </div>
-          <!-- primary nav for desktop aligned to the right -->
+          <!-- Desktop nav -->
           <div class="hidden md:flex items-center space-x-1">
             <template v-for="(item, index) in menuItems" :key="`desktop-${index}`">
               <div class="relative group">
@@ -34,7 +34,10 @@
                        subItem.label }}</a>
                 </div>
               </div>
+
             </template>
+            <AppThemeToggle />
+
           </div>
         </div>
       </div>
@@ -73,6 +76,8 @@ const toggleDarkMode = useToggle(isDark);
 const menuItems = ref([
   { label: 'Home', link: '/', submenu: [], isSubMenuActive: false },
   { label: 'Articles', link: '/articles', submenu: [], isSubMenuActive: false },
+  { label: 'Now', link: '/now', submenu: [], isSubMenuActive: false },
+  { label: 'Projects', link: '/projects', submenu: [], isSubMenuActive: false },
   {
     label: 'More', link: '', submenu: [
       { label: 'Gallery', link: '/gallery' },

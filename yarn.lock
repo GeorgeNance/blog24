@@ -1127,7 +1127,7 @@
   optionalDependencies:
     ipx "^2.0.2"
 
-"@nuxt/kit@^3.10.0", "@nuxt/kit@^3.10.1", "@nuxt/kit@^3.10.2", "@nuxt/kit@^3.2.0", "@nuxt/kit@^3.4.2", "@nuxt/kit@^3.5.1", "@nuxt/kit@^3.6.0", "@nuxt/kit@^3.8.0", "@nuxt/kit@^3.8.1", "@nuxt/kit@^3.8.2", "@nuxt/kit@^3.9.0", "@nuxt/kit@^3.9.1", "@nuxt/kit@^3.9.3", "@nuxt/kit@3.10.3":
+"@nuxt/kit@^3.10.0", "@nuxt/kit@^3.10.1", "@nuxt/kit@^3.10.2", "@nuxt/kit@^3.10.3", "@nuxt/kit@^3.2.0", "@nuxt/kit@^3.4.2", "@nuxt/kit@^3.5.1", "@nuxt/kit@^3.6.0", "@nuxt/kit@^3.8.0", "@nuxt/kit@^3.8.1", "@nuxt/kit@^3.8.2", "@nuxt/kit@^3.9.0", "@nuxt/kit@^3.9.1", "@nuxt/kit@^3.9.3", "@nuxt/kit@3.10.3":
   version "3.10.3"
   resolved "https://registry.npmjs.org/@nuxt/kit/-/kit-3.10.3.tgz"
   integrity sha512-PUjYB9Mvx0qD9H1QZBwwtY4fLlCLET+Mm9BVqUOtXCaGoXd6u6BE4e/dGFPk2UEKkIcDGrUMSbqkHYvsEuK9NQ==
@@ -6734,6 +6734,16 @@ nuxt-config-schema@^0.4.6:
     jiti "^1.18.2"
     pathe "^1.0.0"
     untyped "^1.3.2"
+
+nuxt-gtag@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.npmjs.org/nuxt-gtag/-/nuxt-gtag-2.0.1.tgz"
+  integrity sha512-fNgCHonuOr4MQnNUdejmzxTGgBrahHlGtDgKZ5XeqhhdvwbdiPiiNknAtjEkt73pftVIwBCoxEYeklXo34HhSQ==
+  dependencies:
+    "@nuxt/kit" "^3.10.3"
+    defu "^6.1.4"
+    pathe "^1.1.2"
+    ufo "^1.4.0"
 
 nuxt-icon@^0.6.8:
   version "0.6.8"

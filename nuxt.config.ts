@@ -30,7 +30,9 @@ export default defineNuxtConfig({
     "@vueuse/nuxt",
     '@nuxtjs/seo',
     '@vueuse/nuxt',
-    '@vueuse/motion/nuxt'
+    '@vueuse/motion/nuxt',
+    '@nuxtjs/color-mode',
+    'nuxt-gtag'
   ],
 
   app: {

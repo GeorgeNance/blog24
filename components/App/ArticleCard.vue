@@ -8,9 +8,6 @@
   opacity: 1,
   y: 0,
   scale: 1,
-}" :hovered="{
-  scale: 1.05,
-
 }" :delay="delayAnimation">
       <h2
           class="text-base font-semibold font-display tracking-tight text-gray-800 dark:text-gray-100 group-hover:text-primary-600">
