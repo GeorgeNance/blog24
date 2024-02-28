@@ -31,10 +31,8 @@
     "@tailwindcss/typography": "^0.5.10",
     "@vueuse/motion": "^2.1.0",
     "@vueuse/nuxt": "^10.8.0",
-    "clsx": "^2.1.0",
     "remark-reading-time": "^2.0.1",
     "swiper": "^11.0.6",
-    "tailwind-merge": "^2.2.1",
     "vue-use-fixed-header": "^2.0.0"
   }
 }

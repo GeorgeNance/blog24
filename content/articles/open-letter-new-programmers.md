@@ -24,7 +24,7 @@ I know that you think that this way over your head. But I promise it will take t
 
 The worst thing you can do is take on a massive project in the beginning. When I was a wee lad, I loved the movie the Social Network. The movie revolved around Mark Zuckerberg starting Facebook from his college dorm room. I would get so inspired after watching that I would proclaim to my friends, “I”m going to build the next Facebook!”. Then I would open up my ~~pirated~~ copy of Adobe DreamWeaver and pretend to know was doing.
 
-![People from the Social Network   movie staring at computer](https://media1.tenor.com/images/cedc741cbcef0b97cc652ad9cb29d0ad/tenor.gif?itemid=13969571 'Rare footage of me in 2009 having no idea what I'm doing')
+![People from the Social Network   movie staring at computer](https://media1.tenor.com/images/cedc741cbcef0b97cc652ad9cb29d0ad/tenor.gif?itemid=13969571)
 
 At the time, I did not know much html. And the only css I knew was how to the change the color of text. But I was going to write the next Facebook.
 
