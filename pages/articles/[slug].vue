@@ -11,6 +11,9 @@
             <time class="" :datetime="doc.date">{{ getReadableDate(doc.date) }}</time>
             <span class="mx-2">❖</span>
             <span v-if="doc.readingTime">{{ doc.readingTime.text }}</span>
+            <span v-for="(tag, index) in doc.tags" :key="index">
+              <NuxtLink :to="`/tags/${tag}`" class=" ml-2 text-cyan-500 hover:underline">#{{ tag }}</NuxtLink>
+            </span>
           </div>
 
           <ContentRenderer :value="doc" />
