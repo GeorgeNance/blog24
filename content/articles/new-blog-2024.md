@@ -4,7 +4,7 @@ date: 2024-02-27
 tags: ['personal','nuxt']
 slug: new-blog-2024
 description: New stack, who dis?
-draft: false
+_draft: true
 ---
 
 After not touching my blog for a couple years, I finally decided on a stack and began to rebuild it. I wanted to outline my journey and tools that got me here.
@@ -16,7 +16,7 @@ After not touching my blog for a couple years, I finally decided on a stack and 
 
 ## Gatsby
 
-In the summer of 2020, I taught myself React and Gatsby by building my blog. This became a great introduction to static site generators. After being a full stack php developer for 3 years, the Dev Experience of Gatsby was a breath of fresh air. I followed a few tutorials from Josh Comeau and I had my blog deployed by the end of the week. It was a fun time despite the world being on fire.
+In the summer of 2020, I taught myself React and Gatsby by building my blog. This became a great introduction to static site generators. After being a full stack php developer for 3 years, the Dev Experience of Gatsby was a breath of fresh air. I followed a few tutorials from [Josh Comeau](https://joshwcomeau.com) and I had my blog deployed by the end of the week. It was a fun time despite the world being on fire.
 
 Unfortunately, I didn't keep up with the blog. I didn't use React professionally or in any side projects, so solving problems in Gatsby took longer than I wanted. It became harder and harder to fill my brain with programming knowledge that was only useful for one thing. Not to mention Gatsby was starting to become very slow when building my site and would randomly break because some package updated. All of that plus life changes, I didn't have the energy to keep posting or maintaining the blog.
 
