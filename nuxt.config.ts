@@ -23,6 +23,9 @@ export default defineNuxtConfig({
       enabled: true,
     },
   },
+  colorMode: {
+    classSuffix: ''
+  },
   modules: [
     // "@nuxt/ui",
     '@nuxtjs/tailwindcss',
