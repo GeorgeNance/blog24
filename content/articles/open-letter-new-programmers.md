@@ -18,7 +18,7 @@ I am going to share with you some advice I would have given myself when I first 
 
 ![woman in gray shirt sitting on bench in front of MacBook](/img/articles/faking-it.jpg 'Photo by Christin Hume')
 
-I know that you think that this way over your head. But I promise it will take time to get used to. Not a single soul born knows how to code. In the same sense, no one is born knowing how to walk. Only persistance will give you the results you want. Do not compare yourself or your code to others. **This is a quickest way to hating your work**.
+I know that you think that this way over your head. But I promise it will take time to get used to. Not a single soul born knows how to code. In the same sense, no one is born knowing how to walk. Only persistance will give you the results you want. Do not compare yourself or your code to others. **This is the quickest way to hating your work**.
 
 ## You must write garbage code first
 
@@ -32,7 +32,7 @@ At the time, I did not know much html. And the only css I knew was how to the ch
 
 The truth is, Facebook was **not** Zuckerberg’s first website. He was already an experienced programmer by the time he started Facebook. And no one talks about the projects he made before he got to Harvard. That’s an important thing to remember, your first projects are going to suck and no one but you will want to use them. And that’s okay!
 
-In the game development community, there is a common piece of advice given to beginners. “Don’t write an MMO as your first game”. It's not surprising that aspiring gamedevs come into the field wanting to create the games they enjoy playing. This advice is not meant to be discouraging. What said is that you have to crawl before you can walk. If you dediate yourself to a huge project early on, you will become overwhemled and burn out.
+In the game development community, there is a common piece of advice given to beginners. “Don’t write an MMO as your first game”. It's not surprising that aspiring gamedevs come into the field wanting to create the games they enjoy playing. This advice is not meant to be discouraging. What said is that you have to crawl before you can walk. If you dediate yourself to a huge project early on, you will become overwhelmed and burn out.
 
 But if you accept that your first works will suck, you will grow and learn what you can do. The faster you get past the sucky bits, the faster you get to the _not so bad_ parts.
 
