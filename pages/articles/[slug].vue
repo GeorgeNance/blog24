@@ -3,7 +3,9 @@
     <main class="min-h-screen max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="">
         <ContentDoc v-slot="{ doc }" tag="article">
-
+          <pre>
+            {{ doc }}
+          </pre>
           <article class="w-full">
             <h1 class="text-5xl dark:text-white font-h1 font-bold mb-4">{{ doc.title }}</h1>
             <div class=" text-gray-600 dark:text-gray-500">
@@ -39,7 +41,10 @@
 <script setup>
 const route = useRoute();
 const { slug } = route.params;
-
+console.log(slug);
+// Grab the article from the content module
+const { data: page } = useAsyncData(slug, () => queryContent('article').where({ slug: { $eq: slug } }).findOne())
+console.log(page);
 
 useSeoMeta({
   twitterCard: "summary_large_image",
@@ -47,9 +52,9 @@ useSeoMeta({
 });
 
 defineOgImageComponent('NuxtSeo', {
-  title: 'Hello OG Image 👋',
-  description: 'Look what at me in dark mode',
-  theme: '#ff0000',
+  title: page.title,
+  description: page.description,
+  theme: 'hsl(210, 80%, 50%)',
   colorMode: 'dark',
 
 })
