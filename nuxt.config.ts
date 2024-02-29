@@ -65,7 +65,9 @@ export default defineNuxtConfig({
     markdown: {
       remarkPlugins: ['remark-reading-time'],
     },
-
+  },
+  image: {
+    format: ['webp']
   },
   googleFonts: {
     display: "swap",
