@@ -51,12 +51,9 @@ useSeoMeta({
   articleAuthor: "George Nance",
 });
 
-defineOgImageComponent('NuxtSeo', {
+defineOgImageComponent('BlogPost', {
   title: page.title,
   description: page.description,
-  theme: 'hsl(210, 80%, 50%)',
-  colorMode: 'dark',
-
 })
 
 
