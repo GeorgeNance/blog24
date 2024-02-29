@@ -3,9 +3,9 @@
     <main class="min-h-screen max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="">
         <ContentDoc v-slot="{ doc }" tag="article">
-          <pre>
+          <!-- <pre>
             {{ doc }}
-          </pre>
+          </pre> -->
           <article class="w-full">
             <h1 class="text-5xl dark:text-white font-h1 font-bold mb-4">{{ doc.title }}</h1>
             <div class=" text-gray-600 dark:text-gray-500">
