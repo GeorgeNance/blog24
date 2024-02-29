@@ -9,15 +9,7 @@ description: I am going to walk you through how to seperate your markdown files 
 draft: false
 ---
 
-- [Introduction](#introduction)
-  - [How splitting up markdown is normally done](#how-splitting-up-markdown-is-normally-done)
-  - [Why its bad](#why-its-bad)
-- [Prerequisites](#prerequisites)
-- [Step 1 - Create the folder structure](#step-1---create-the-folder-structure)
-- [Step 2 - Set up the file system in Gatsby](#step-2---set-up-the-file-system-in-gatsby)
-- [Step 3 - Update Gatsby config](#step-3---update-gatsby-config)
-- [Step 4 - Let the separating begin](#step-4---let-the-separating-begin)
-- [Wrap Up](#wrap-up)
+
 
 ## Introduction
 

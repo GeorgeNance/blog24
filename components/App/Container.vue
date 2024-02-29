@@ -1,5 +1,5 @@
 <template>
-  <div class="container mx-auto">
+  <div class="container ">
     <slot />
   </div>
 </template>
@@ -11,6 +11,6 @@
 <style>
 .container {
   /* Add Tailwind CSS classes or custom styles here */
-  @apply px-4 max-w-4xl mx-auto;
+  @apply max-w-6xl mx-auto px-4 sm:px-6 lg:px-8;
 }
 </style>

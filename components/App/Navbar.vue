@@ -1,7 +1,7 @@
 <template>
   <div ref="headerRef" :style="styles" class="bg-white dark:bg-slate-800/90 fixed top-0 w-full z-50 backdrop-blur">
     <nav class="border-b border-gray-100 dark:border-gray-700">
-      <div class="max-w-4xl mx-auto px-4">
+      <div class="max-w-6xl mx-auto px-4">
         <div class="flex justify-between">
           <!-- logo -->
           <div>

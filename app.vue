@@ -6,9 +6,9 @@
 
     <AppNavbar />
     <div class="h-32"></div>
-    <AppContainer class="z-10">
-      <NuxtPage />
-    </AppContainer>
+    <div class="z-10">
+      <NuxtLayout />
+    </div>
     <div class="h-32"></div>
     <AppFooter />
 

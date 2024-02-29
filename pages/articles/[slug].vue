@@ -1,12 +1,11 @@
 <template>
   <div>
-    <main class="min-h-screen">
-      <div
-           class="prose prose-lg dark:prose-invert prose-blockquote:not-italic prose-pre:bg-gray-900 prose-img:ring-1 prose-img:ring-gray-200 dark:prose-img:ring-white/10 prose-img:rounded-lg  ">
+    <main class="min-h-screen max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="">
         <ContentDoc v-slot="{ doc }" tag="article">
 
-          <article>
-            <h1>{{ doc.title }}</h1>
+          <article class="w-full">
+            <h1 class="text-5xl dark:text-white font-h1 font-bold mb-4">{{ doc.title }}</h1>
             <div class=" text-gray-600 dark:text-gray-500">
               Published on
               <time class="" :datetime="doc.date">{{ getReadableDate(doc.date) }}</time>
@@ -16,8 +15,17 @@
                 <NuxtLink :to="`/tags/${tag}`" class=" ml-2 text-cyan-500 hover:underline">#{{ tag }}</NuxtLink>
               </span>
             </div>
+            <div class="grid grid-cols-4 gap-4 grid-flow-col w-full mt-10">
 
-            <ContentRenderer :value="doc" />
+              <div class="md:col-span-3 col-span-4">
+                <ContentRenderer :value="doc"
+                                 class="article-body prose prose-lg dark:prose-invert prose-blockquote:not-italic prose-pre:bg-gray-900 prose-img:ring-1 prose-img:ring-gray-200 dark:prose-img:ring-white/10 prose-img:rounded-lg  "
+                                 ref="articleBody" />
+              </div>
+              <aside class="col-span-1 hidden md:flex md:flex-col" v-if="doc.body.toc.links.length > 2">
+                <AppTableOfContents :toc="doc.body.toc" />
+              </aside>
+            </div>
           </article>
         </ContentDoc>
       </div>

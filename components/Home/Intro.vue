@@ -8,7 +8,9 @@
       Welcome!👋
     </h1>
     <p ref="description" class="text-gray-900 dark:text-gray-300">
-      I'm George Nance, I'm a full stack web developer based in Phoenix, AZ. I am passionate about technology and all
+      I'm <span class="text-cyan-500 font-bold">George Nance</span>, I'm a full stack web developer based in Phoenix, AZ.
+      I am
+      passionate about technology and all
       things nerdy. Sometimes I write and publish it here.
     </p>
     <p class="text-gray-900 dark:text-gray-300">

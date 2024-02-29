@@ -1,13 +1,10 @@
 <template>
-  <div class="bg-gradient-to-b dark:from-slate-900 dark:to-slate-700">
+  <div class="">
     <!-- <AppSkyBackground> -->
-    <AppNavbar />
-    <div class="h-32"></div>
-    <div class="z-10">
-      <slot />
-    </div>
-    <div class="h-32"></div>
-    <AppFooter />
+    <AppContainer class="z-10">
+      <NuxtPage />
+    </AppContainer>
+
     <!-- </AppSkyBackground> -->
   </div>
 </template>
