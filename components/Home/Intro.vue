@@ -25,10 +25,10 @@
 useSeoMeta({
   title: "Home",
   description:
-    " I'm George Nance, a Full Stack Web Developer from the sunny landscapes of Phoenix, Arizona. My passion lies in leveraging the latest technologies to craft accessible, engaging experiences.",
+    "I'm George Nance, a Full Stack Web Developer from the sunny landscapes of Phoenix, Arizona. My passion lies in leveraging the latest technologies to craft accessible, engaging experiences.",
 });
 
-// Grab mouse position
+
 
 
 
