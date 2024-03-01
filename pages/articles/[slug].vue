@@ -41,10 +41,10 @@
 <script setup>
 const route = useRoute();
 const { slug } = route.params;
-console.log(slug);
+
 // Grab the article from the content module
 const { data: page } = useAsyncData(slug, () => queryContent('article').where({ slug: { $eq: slug } }).findOne())
-console.log(page);
+
 
 useSeoMeta({
   twitterCard: "summary_large_image",
