@@ -22,7 +22,6 @@
     "@nuxtjs/seo": "^2.0.0-rc.7",
     "nuxt": "^3.15.4",
     "nuxt-gtag": "^2.0.1",
-    "nuxt-icon": "0.6.7",
     "prettier": "3.1.1",
     "prettier-plugin-tailwindcss": "0.5.9",
     "tailwindcss": "^3.4.1",
@@ -40,6 +39,7 @@
     "@vueuse/nuxt": "^10.8.0",
     "remark-reading-time": "^2.0.1",
     "swiper": "^11.0.6",
-    "vue-use-fixed-header": "^2.0.0"
+    "vue-use-fixed-header": "^2.0.0",
+    "nuxt-icon": "0.6.7"
   }
 }
