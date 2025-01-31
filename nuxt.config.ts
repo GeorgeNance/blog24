@@ -27,7 +27,6 @@ export default defineNuxtConfig({
     classSuffix: ''
   },
   modules: [
-    // "@nuxt/ui",
     '@nuxtjs/tailwindcss',
     "nuxt-icon",
     "@nuxtjs/google-fonts",
