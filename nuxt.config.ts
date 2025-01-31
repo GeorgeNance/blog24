@@ -37,7 +37,6 @@ export default defineNuxtConfig({
     "@nuxthq/studio",
     "@vueuse/nuxt",
     '@nuxtjs/seo',
-    '@vueuse/nuxt',
     '@vueuse/motion/nuxt',
     '@nuxtjs/color-mode',
     'nuxt-gtag'
