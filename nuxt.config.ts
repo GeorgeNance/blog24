@@ -41,7 +41,11 @@ export default defineNuxtConfig({
     '@nuxtjs/color-mode',
     'nuxt-gtag'
   ],
-
+  tailwindcss: {
+    exposeConfig: true,
+    viewer: true,
+    // and more...
+  },
   app: {
     pageTransition: { name: "page", mode: "out-in" },
     head: {
