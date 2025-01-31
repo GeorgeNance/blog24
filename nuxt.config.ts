@@ -42,6 +42,7 @@ export default defineNuxtConfig({
     'nuxt-gtag'
   ],
   tailwindcss: {
+    configPath: '~/tailwind.config.js',
     exposeConfig: true,
     viewer: true,
     // and more...
