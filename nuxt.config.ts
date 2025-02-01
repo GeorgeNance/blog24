@@ -1,6 +1,6 @@
 export default defineNuxtConfig({
   site: {
-    // url: 'https://GeorgeNance.com',
+    url: 'https://GeorgeNance.com',
     name: 'George Nance',
     description: 'George Nance is a software engineer, writer, and creator. He writes about software development, productivity, and personal growth.',
     defaultLocale: 'en', // not needed if you have @nuxtjs/i18n installed
@@ -27,7 +27,6 @@ export default defineNuxtConfig({
     classSuffix: ''
   },
   modules: [
-    // "@nuxt/ui",
     '@nuxtjs/tailwindcss',
     "nuxt-icon",
     "@nuxtjs/google-fonts",
@@ -37,12 +36,16 @@ export default defineNuxtConfig({
     "@nuxthq/studio",
     "@vueuse/nuxt",
     '@nuxtjs/seo',
-    '@vueuse/nuxt',
     '@vueuse/motion/nuxt',
     '@nuxtjs/color-mode',
     'nuxt-gtag'
   ],
-
+  tailwindcss: {
+    configPath: '~/tailwind.config.js',
+    exposeConfig: true,
+    viewer: true,
+    // and more...
+  },
   app: {
     pageTransition: { name: "page", mode: "out-in" },
     head: {

@@ -1,5 +1,5 @@
-import type { Config } from "tailwindcss";
-module.exports = {
+/** @type {import('tailwindcss').Config} */
+export default {
   darkMode: 'class',
   content: [
     "./components/**/*.{js,vue,ts}",
@@ -65,4 +65,5 @@ module.exports = {
     },
   },
   plugins: [require("@tailwindcss/typography")],
-} satisfies Config;
+}
+
