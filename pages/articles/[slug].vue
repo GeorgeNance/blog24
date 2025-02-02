@@ -38,13 +38,11 @@
 </template>
 <script setup>
 const slug = useRoute().params.slug
-console.log(slug)
 // Grab the article from the content module
 const { data: post } = await useAsyncData(`article-${slug}`, () => {
   return queryCollection('article').where('slug', '=', slug).first()
 })
 
-console.log(post);
 
 useSeoMeta({
   twitterCard: "summary_large_image",

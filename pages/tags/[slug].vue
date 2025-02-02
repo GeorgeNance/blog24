@@ -16,7 +16,6 @@ const fallbackDescription =
 
 // Get Tag from route
 const slug = useRoute().params.slug
-console.log(slug);
 
 // Grab the article from the content module
 const tag = await queryCollection('tag')
