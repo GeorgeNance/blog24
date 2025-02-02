@@ -1,0 +1,1 @@
+import{k as o,c as t,e as s,W as r}from"./B-wxCGCA.js";const a={},c={class:"max-h-96 overflow-auto bg-gray-900 text-sm p-2"};function n(e,l){return s(),t("div",c,[r(e.$slots,"default")])}const d=o(a,[["render",n]]);export{d as default};
