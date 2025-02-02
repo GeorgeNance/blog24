@@ -3,7 +3,6 @@ title: 'A little about me'
 date: 2015-04-05
 slug: a-little-about-me-2015
 archived: true
-type: article
 description: The year was 2004, My parents bought me my first PC. I didn't have a clue about anything.
 draft: true
 ---

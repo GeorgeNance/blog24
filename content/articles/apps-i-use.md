@@ -1,7 +1,7 @@
 ---
 title: 'The Apps I Use'
 date: 2020-11-28
-cover_image: cover.jpg
+ogImage: cover.jpg
 tags: ['productivity','tools','adhd']
 slug: apps-i-use
 description: I have assembled a list of great apps that I use everyday that make my life easier

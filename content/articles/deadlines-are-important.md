@@ -1,10 +1,9 @@
 ---
 title: 'Deadlines are important'
 date: 2017-03-07
-type: article
 tags: ['gamedev', 'productivity']
 updatedAt: 2020-08-13
-slug: 'archive/2017/deadlines-are-important'
+slug: deadlines-are-important
 description: The ultimate inspiration is the deadline.
 archived: true
 draft: false

@@ -1,8 +1,8 @@
 <template>
   <main class="min-h-screen">
     <AppHeader class="mb-8" title="Articles" :description="description" />
-    <div v-for="year in sortedYears" :key="year" class="mb-16">
-      <h2 class="text-2xl font-bold mb-4">{{ year }}</h2>
+    <div v-for="year in sortedYears" :key="year" class="mb-4">
+      <h2 class="text-2xl font-bold mb-2">{{ year }}</h2>
       <ul class="space-y-4">
         <li v-for="(article, id) in groupedArticles[year]" :key="article._path">
           <AppArticleCard :article="article" :delay-animation="id * 100" />
@@ -14,6 +14,7 @@
 
 <script setup>
 import { ref, computed } from 'vue';
+const route = useRoute();
 
 const description =
   "All of my long-form thoughts on programming, user interfaces, product design, and more, collected in chronological order.";
@@ -22,13 +23,12 @@ useSeoMeta({
   description,
 });
 
-const { data: articles } = await useAsyncData("all-articles", () =>
-  queryContent("/articles")
-    .where({ draft: { $ne: true } })
-    .sort({ date: -1 })
-    .find()
-);
-
+const { data: articles } = await useAsyncData(route.path, () => {
+  return queryCollection("article")
+    .where('draft', '=', 0)
+    .order('date', 'DESC')
+    .all();
+});
 const groupedArticles = computed(() => {
   if (!articles.value) return {};
 

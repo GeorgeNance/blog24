@@ -5,9 +5,7 @@
         <h1 class="text-[60px] text-left pb-2">
           {{ title }}
         </h1>
-        <p class="text-3xl max-w-4/5  mb-12 ">
-          {{ emoji }}
-        </p>
+
         <p class="text-2xl font-bold">George Nance</p>
       </div>
       <div class="absolute bottom-4 right-4  opacity-90">
@@ -71,12 +69,11 @@
 withDefaults(defineProps<{
   title?: string,
   description?: string,
-  emoji?: char,
+
+
 }>(), {
   title: 'title',
   description: 'description',
-  emoji: '👋'
+
 })
 </script>
-
-

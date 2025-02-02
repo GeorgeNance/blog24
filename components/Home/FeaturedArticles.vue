@@ -15,12 +15,11 @@
 </template>
 
 <script lang="ts" setup>
-const { data: articles } = await useAsyncData("articles-home", () =>
-  queryContent("/articles")
-    .sort({ date: -1 })
-    .where({ draft: { $ne: true } })
+const { data: articles } = await useAsyncData("featured-articles", () =>
+  queryCollection("article")
+    .order('date', 'DESC')
+    .where('draft', '=', 0)
     .limit(3)
-    .only(["title", "description", "date", "slug", "_path", "readingTime"])
-    .find()
+    .all()
 );
 </script>

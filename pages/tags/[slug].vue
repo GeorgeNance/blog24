@@ -1,7 +1,7 @@
 <template>
 	<main class="min-h-screen">
-		<AppHeader class="mb-16" :title="`${tag} articles`" :description="description" />
-		<ul class="space-y-16">
+		<AppHeader class="mb-16" :title="`${title} articles`" :description="description" />
+		<ul class="space-y-4">
 			<li v-for="(article, id) in articles" :key="id">
 				<AppArticleCard :article="article" :delay-animation="id * 100" />
 			</li>
@@ -10,26 +10,31 @@
 </template>
 
 <script setup>
-const description =
+const fallbackDescription =
 	"All of my long-form thoughts on programming, user interfaces, product design, and more, collected in chronological order.";
 
 
 // Get Tag from route
-const { slug } = useRoute().params;
+const slug = useRoute().params.slug
 console.log(slug);
 
-// Upper case first letter
-const tag = slug.charAt(0).toUpperCase() + slug.slice(1);
+// Grab the article from the content module
+const tag = await queryCollection('tag')
+	.where('slug', '=', slug)
+	.first()
 
+let title = tag?.title || slug.charAt(0).toUpperCase() + slug.slice(1)
+let description = tag?.description || fallbackDescription
 
 useSeoMeta({
-	title: tag,
-	description,
+	title: title,
+	description: description,
 });
 
 const { data: articles } = await useAsyncData(`${slug}-articles`, () =>
-	queryContent("/articles")
-		.where({ 'tags': { $contains: slug } })
-		.sort({ date: -1 }).find()
+	queryCollection("article")
+		.where('tags', 'LIKE', `%${slug}%`)
+		.order('date', 'DESC')
+		.all()
 );
 </script>

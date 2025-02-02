@@ -3,7 +3,7 @@ title: 'An Open Letter to New Programmers'
 date: 2020-07-31
 tags: ['novice', 'essay']
 slug: open-letter-new-programmers
-cover_image: cover.jpg
+ogImage: /img/articles/open-letter-new-programmers.jpg
 description: Programming is more about the ability to love learning than it is about remembering what you have learned
 draft: false
 ---

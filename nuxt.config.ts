@@ -5,7 +5,13 @@ export default defineNuxtConfig({
     description: 'George Nance is a software engineer, writer, and creator. He writes about software development, productivity, and personal growth.',
     defaultLocale: 'en', // not needed if you have @nuxtjs/i18n installed
   },
-  ssr: true,
+
+  $production: {
+    routeRules: {
+      '/**': { isr: true }
+    }
+  },
+
   routeRules: {
     '/delete-untracked-files-git': { redirect: '/articles/delete-untracked-files-git' },
     '/being-productive-programmer-adhd': { redirect: '/articles/being-productive-programmer-adhd', },
@@ -16,7 +22,9 @@ export default defineNuxtConfig({
     '/dont-use-frontmatter-markdown-files-gatsby': { redirect: '/articles/dont-use-frontmatter-markdown-files-gatsby' },
 
   },
+
   css: ['~/assets/css/main.css'],
+
   devtools: {
     enabled: true,
 
@@ -24,9 +32,11 @@ export default defineNuxtConfig({
       enabled: true,
     },
   },
+
   colorMode: {
     classSuffix: ''
   },
+
   modules: [
     '@nuxtjs/tailwindcss',
     "nuxt-icon",
@@ -41,12 +51,14 @@ export default defineNuxtConfig({
     '@nuxtjs/color-mode',
     'nuxt-gtag'
   ],
+
   tailwindcss: {
     configPath: '~/tailwind.config.js',
     exposeConfig: true,
     viewer: true,
     // and more...
   },
+
   app: {
     pageTransition: { name: "page", mode: "out-in" },
     head: {
@@ -61,22 +73,32 @@ export default defineNuxtConfig({
       },
     },
   },
-  content: {
-    highlight: {
-      theme: "github-dark",
-    },
 
-    markdown: {
-      remarkPlugins: ['remark-reading-time'],
-    },
+  content: {
+
+    build: {
+      markdown: {
+        // toc: {
+        //   depth: 3,
+        //   searchDepth: 3,
+        // },
+        remarkPlugins: {
+          'remark-reading-time': {}
+        },
+      },
+    }
   },
+
   image: {
     format: ['webp']
   },
+
   googleFonts: {
     display: "swap",
     families: {
       Inter: [400, 500, 600, 700, 800, 900],
     },
   },
+
+  compatibilityDate: '2025-02-01',
 });

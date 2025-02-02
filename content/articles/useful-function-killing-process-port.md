@@ -3,7 +3,7 @@ title: 'A useful shell command for killing processes by port'
 date: 2024-02-01
 tags: ['productivity']
 slug: useful-function-killing-process-port
-cover_image: cover.jpg
+ogImage: cover.jpg
 description: Heres a cool command
 draft: false
 ---

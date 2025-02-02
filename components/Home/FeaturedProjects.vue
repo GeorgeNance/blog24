@@ -13,7 +13,7 @@
 </template>
 
 <script lang="ts" setup>
-const { data: projects } = await useAsyncData("projects-home", () =>
-  queryContent("/projects").limit(3).find()
-);
+// const { data: projects } = await useAsyncData("projects-home", () =>
+//   queryContent("/projects").limit(3).find()
+// );
 </script>

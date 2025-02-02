@@ -4,7 +4,7 @@ date: 2024-02-27
 tags: ['personal','nuxt']
 slug: new-blog-2024
 description: New stack, who dis?
-_draft: true
+draft: true
 ---
 
 After not touching my blog for a couple years, I finally decided on a stack and began to rebuild it. I wanted to outline my journey and tools that got me here.
