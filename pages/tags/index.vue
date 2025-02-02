@@ -23,28 +23,26 @@ useSeoMeta({
 	title: "Tags",
 	description,
 });
-const { data: articles } = await useAsyncData("all-articles", () =>
-	queryCollection("article").find()
-);
 
+const { data: articles } = await useAsyncData("all-articles", () => {
+	return queryCollection("article")
+		.where("draft", "=", false)
+		.all();
+});
 
-// Remove Articles with no tags
-const articlesWithTags = articles.value.filter((article) => article.tags !== undefined && article.tags.length > 0);
+console.log("Articles:", articles.value);
 
-
-// Get Tags
-const tags = articlesWithTags
-	.map((article) => article.tags)
+// Get Tags - only proceed if we have articles
+const tags = articles.value?.map((article) => article.tags)
 	.flat()
 	.filter((tag, index, self) => self.indexOf(tag) === index)
 	.filter((tag) => tag !== undefined)
-	.sort();
+	.sort() || [];
+
 // Get Count of articles for each tag
 const tagCount = tags.map((tag) => {
-	const count = articlesWithTags.filter((article) => article.tags.includes(tag)).length;
+	const count = articles.value?.filter((article) => article.tags.includes(tag)).length || 0;
 	return { tag, count };
 });
-
-
 
 </script>

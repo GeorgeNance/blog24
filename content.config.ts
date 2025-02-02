@@ -31,8 +31,7 @@ export default {
 
 		page: defineCollection({
 			type: 'page',
-			source: '**/*.md',
-
+			source: '**/*.md'
 		}),
 
 	}
