@@ -5,6 +5,7 @@ export default defineNuxtConfig({
     description: 'George Nance is a software engineer, writer, and creator. He writes about software development, productivity, and personal growth.',
     defaultLocale: 'en', // not needed if you have @nuxtjs/i18n installed
   },
+  ssr: true,
   routeRules: {
     '/delete-untracked-files-git': { redirect: '/articles/delete-untracked-files-git' },
     '/being-productive-programmer-adhd': { redirect: '/articles/being-productive-programmer-adhd', },
