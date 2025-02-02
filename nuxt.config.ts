@@ -44,7 +44,7 @@ export default defineNuxtConfig({
     "@nuxtjs/fontaine",
     "@nuxt/image",
     "@nuxt/content",
-    "@nuxthq/studio",
+    // "@nuxthq/studio",
     "@vueuse/nuxt",
     '@nuxtjs/seo',
     '@vueuse/motion/nuxt',

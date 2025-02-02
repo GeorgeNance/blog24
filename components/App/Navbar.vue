@@ -31,7 +31,7 @@
                      class="absolute left-0 bg-white dark:bg-gray-800 shadow-md mt-2 rounded-md overflow-hidden hidden group-hover:block">
                   <a v-for="subItem in item.submenu" :key="subItem.label" :href="subItem.link"
                      class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200 dark:text-gray-200 dark:hover:bg-gray-700">{{
-                       subItem.label }}</a>
+                      subItem.label }}</a>
                 </div>
               </div>
 
@@ -106,7 +106,7 @@ watch(() => route.path, () => {
 
 <style scoped>
 .active-menu-item {
-  @apply text-blue-400 shadow-md dark:shadow-md;
+  @apply text-blue-400 dark:shadow-md font-bold;
   /* Example with Tailwind utilities */
   /* Customize further as needed */
 }

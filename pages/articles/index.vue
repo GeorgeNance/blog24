@@ -1,9 +1,9 @@
 <template>
   <main class="min-h-screen">
     <AppHeader class="mb-8" title="Articles" :description="description" />
-    <div v-for="year in sortedYears" :key="year" class="mb-4">
+    <div v-for="year in sortedYears" :key="year" class="my-4">
       <h2 class="text-2xl font-bold mb-2">{{ year }}</h2>
-      <ul class="space-y-4">
+      <ul class="space-y-4 ml-4">
         <li v-for="(article, id) in groupedArticles[year]" :key="article._path">
           <AppArticleCard :article="article" :delay-animation="id * 100" />
         </li>
