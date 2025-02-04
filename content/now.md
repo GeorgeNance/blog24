@@ -8,12 +8,8 @@ draft: false
 
 ## What I am currently doing:
 
-- Working as a developer for Vivid Racing.
-
-- Playing Palworld 
-
-- Moving my blog to a new tech stack
-
+- Practicing getting better at Typescript
+- Working on my new blog stack in Nuxt 3
 
 ---
 Last updated: December 2024
