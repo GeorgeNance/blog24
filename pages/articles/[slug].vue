@@ -38,9 +38,17 @@
 </template>
 <script setup>
 const slug = useRoute().params.slug
+
+
+
+
 // Grab the article from the content module
 const { data: post } = await useAsyncData(`article-${slug}`, () => {
   return queryCollection('article').where('slug', '=', slug).first()
+})
+
+defineRouteRules({
+  robots: post.value.draft == 1
 })
 
 
