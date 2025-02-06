@@ -26,7 +26,7 @@ useSeoMeta({
 
 const { data: articles } = await useAsyncData("all-articles", () => {
 	return queryCollection("article")
-		.where("draft", "=", false)
+		.where("draft", "=", 0)
 		.all();
 });
 
