@@ -5,7 +5,7 @@
         <h1 class="text-[60px] text-left pb-2">
           {{ title }}
         </h1>
-
+        <p>{{ subTitle }}</p>
         <p class="text-2xl font-bold">George Nance</p>
       </div>
       <div class="absolute bottom-4 right-4  opacity-90">
@@ -68,12 +68,12 @@
 <script setup lang="ts">
 withDefaults(defineProps<{
   title?: string,
-  description?: string,
+  subTitle?: string,
 
 
 }>(), {
   title: 'title',
-  description: 'description',
+  subTitle: '',
 
 })
 </script>

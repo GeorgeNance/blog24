@@ -51,14 +51,14 @@ useSeoMeta({
   twitterDescription: post.description,
 });
 
+console.log(post.value)
 
-
-if (post?.ogImage) {
-  defineOgImage(`${post.ogImage}`)
+if (post?.value?.ogImage) {
+  defineOgImage(`${post.value.ogImage}`)
 } else {
   defineOgImageComponent('BlogPost', {
     title: post.title,
-    description: post.description,
+    subTitle: post.value.description,
   })
 }
 
