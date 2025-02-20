@@ -1,25 +1,35 @@
 <template>
   <div class="sticky top-16">
-    <h2 class="uppercase dark:text-slate-200 text-black font-h5 text-sm lg:mt-16 tracking-wider font-bold">
-      Table of contents
-    </h2>
-    <!-- <pre><code>
+    <div
+         class="bg-white dark:bg-gray-800 rounded-lg p-5 shadow-md dark:shadow-gray-900/50 lg:mt-16 border dark:border-gray-700">
+      <h2 class="text-gray-900 dark:text-gray-100 text-sm tracking-wider font-bold uppercase">
+        Table of contents
+      </h2>
+      <!-- <pre><code>
       {{ toc }}
     </code></pre> -->
-    <nav class="mt-4">
-      <ul>
-        <li @click="tableOfContentsHeadingClick(link)" :class="{
-          'pl-4': link.depth === 3
-        }" class="toc-list" v-for="link of toc.links" :key="link.id">
-          <a :class="{
-            'text-green-500 hover:text-green-600':
-              link.id === currentlyActiveToc,
-            'text-black dark:text-slate-300 hover:gray-900 dark:hover:text-green-600': link.id !== currentlyActiveToc
-          }" role="button" class="transition-colors duration-75 text-base mb-2 block" :href="`#${link.id}`">{{
-  link.text }}</a>
-        </li>
-      </ul>
-    </nav>
+      <nav class="mt-4">
+        <ul class="space-y-3">
+          <li v-for="link of toc.links" :key="link.id" :class="{
+            'pl-4': link.depth === 3
+          }" class="toc-list">
+            <a @click.prevent="scrollToSection(link)" :class="{
+              'text-emerald-700 dark:text-emerald-400': link.id === currentlyActiveToc,
+              'text-gray-600 dark:text-gray-400 hover:text-emerald-600 dark:hover:text-emerald-400': link.id !== currentlyActiveToc
+            }" class="block text-sm transition-colors duration-200 ease-in-out py-1 font-semibold" :style="{
+              opacity: link.id === currentlyActiveToc ? '1' : '0.7'
+            }" :href="`#${link.id}`">
+              <span class="relative">
+                {{ link.text }}
+                <span v-if="link.id === currentlyActiveToc"
+                      class="absolute -left-4 top-1/2 -translate-y-1/2 w-2 h-2 bg-emerald-500 dark:bg-emerald-400 rounded-full">
+                </span>
+              </span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
   </div>
 </template>
 <script>
@@ -34,8 +44,13 @@ export default {
     return {
       currentlyActiveToc: "",
       observer: null,
+      navbarHeight: 64, // 4rem/16 tailwind class
+      // Define a consistent target position for both scrolling and intersection
+      targetViewportOffset: 0.3, // 30% from top
       observerOptions: {
-        root: this.$parent.$refs.articleBody,
+        root: null,
+        // Make the intersection band match our scroll target position
+        rootMargin: '-30% 0px -60% 0px',
         threshold: 0
       }
     };
@@ -58,9 +73,20 @@ export default {
       });
   },
   methods: {
-    tableOfContentsHeadingClick(link) {
-      this.currentlyActiveToc = link.id;
-    },
+    scrollToSection(link) {
+      const element = document.getElementById(link.id);
+      if (!element) return;
+
+      // Use the same targetViewportOffset for consistency
+      const viewportOffset = window.innerHeight * this.targetViewportOffset;
+      const elementPosition = element.getBoundingClientRect().top + window.pageYOffset;
+      const offsetPosition = elementPosition - viewportOffset - this.navbarHeight;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      });
+    }
   },
   beforeDestroy() {
     this.observer.disconnect();
@@ -68,4 +94,12 @@ export default {
 };
 </script>
 
-<style></style>
+<style>
+.toc-list {
+  @apply relative;
+}
+
+.toc-list:not(:last-child) {
+  @apply border-b border-gray-100 dark:border-gray-700;
+}
+</style>

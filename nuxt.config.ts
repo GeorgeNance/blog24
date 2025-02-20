@@ -1,6 +1,6 @@
 export default defineNuxtConfig({
   site: {
-    url: 'https://GeorgeNance.com',
+    url: 'https://georgenance.com',
     name: 'George Nance',
     description: 'George Nance is a software engineer, writer, and creator. He writes about software development, productivity, and personal growth.',
     defaultLocale: 'en', // not needed if you have @nuxtjs/i18n installed

@@ -9,7 +9,8 @@
           <div v-if="post.published === false" class="bg-yellow-100 text-yellow-800 rounded-lg p-4 mb-4">
             This article is not published yet.
           </div>
-          <h1 class="text-5xl dark:text-white font-h1 font-bold mb-4">{{ post.title }}</h1>
+          <h1 class="text-5xl dark:text-white font-h1 font-bold mb-8 mt-6 leading-tight">{{ post.title }}</h1>
+          <span class="text-gray-600 dark:text-gray-500"> By George Nance</span>
           <div class="text-gray-600 dark:text-gray-500">
             Published on
             <time class="" :datetime="post.date">{{ getReadableDate(post.date) }}</time>
@@ -25,7 +26,7 @@
                                class="article-body prose prose-lg dark:prose-invert prose-blockquote:not-italic prose-pre:bg-gray-900 prose-img:ring-1 prose-img:ring-gray-200 dark:prose-img:ring-white/10 prose-img:rounded-lg"
                                ref="articleBody" />
             </div>
-            <aside class="col-span-1 hidden md:flex md:flex-col" v-if="post.body?.toc?.links?.length > 2">
+            <aside class="col-span-1 hidden lg:flex lg:flex-col" v-if="post.body?.toc?.links?.length > 2">
               <AppTableOfContents :toc="post.body.toc" />
             </aside>
           </div>
