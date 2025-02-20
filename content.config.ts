@@ -14,7 +14,7 @@ export default {
 				slug: z.string(),
 				date: z.date(),
 				tags: z.array(z.string()),
-				draft: z.boolean().optional(),
+				published: z.boolean(),
 				archived: z.boolean().optional(),
 				updatedAt: z.date().optional(),
 			})

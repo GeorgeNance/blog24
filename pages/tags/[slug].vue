@@ -34,6 +34,7 @@ const { data: articles } = await useAsyncData(`${slug}-articles`, () =>
 	queryCollection("article")
 		.where('tags', 'LIKE', `%${slug}%`)
 		.order('date', 'DESC')
+		.where('published', '=', true)
 		.all()
 );
 </script>

@@ -5,7 +5,7 @@ ogImage: /img/articles/apps-i-use.jpg
 tags: ['productivity','tools','adhd']
 slug: apps-i-use
 description: I have assembled a list of great apps that I use everyday that make my life easier
-draft: false
+published: true
 ---
 ::callout
 This list is a bit outdated, I recommend looking at [my updated list](/bag)

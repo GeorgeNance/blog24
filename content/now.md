@@ -3,7 +3,7 @@ title: 'Now'
 date: 2024-02-01
 slug: now
 description: What I am currently doing
-draft: false
+published: true
 ---
 
 ## What I am currently doing:

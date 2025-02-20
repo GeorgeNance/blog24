@@ -15,11 +15,16 @@
 </template>
 
 <script lang="ts" setup>
-const { data: articles } = await useAsyncData("featured-articles", () =>
-  queryCollection("article")
+const { data: articles } = await useAsyncData("featured-articles", () => {
+  let query = queryCollection("article")
     .order('date', 'DESC')
-    .where('draft', '=', 0)
-    .limit(3)
-    .all()
-);
+    .limit(3);
+
+  // Only filter by published in production
+  if (!process.dev) {
+    query = query.where("published", "=", true);
+  }
+
+  return query.all();
+});
 </script>

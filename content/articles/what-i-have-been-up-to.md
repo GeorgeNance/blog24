@@ -3,7 +3,7 @@ title: 'What I have been up to.'
 date: 2015-05-27
 slug: what-i-have-been-up-to
 archived: true
-draft: true
+published: false
 description: It has been awhile since I did one of these. I have had quite a few life things going on.
 ---
 

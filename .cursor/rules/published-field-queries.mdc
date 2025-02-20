@@ -1,0 +1,58 @@
+---
+description: Published Field Queries
+globs: **/*.{vue,ts}
+---
+name: Published Field Queries
+description: Rules for querying published articles in Nuxt Content v3
+globs: **/*.{vue,ts}
+---
+
+<rule>
+name: published_field_queries
+description: Standards for querying published articles in Nuxt Content v3
+filters:
+  - type: content
+    pattern: "queryCollection.*where.*published"
+
+actions:
+  - type: reject
+    conditions:
+      - pattern: "published.*=.*[01]"
+        message: "Do not use numeric values (0/1) for the published field"
+      - pattern: "published.*\\$(?:eq|ne)"
+        message: "Do not use MongoDB-style operators ($eq, $ne) for the published field"
+      - pattern: "published.*!=.*false"
+        message: "Do not use negative conditions (!= false) for the published field"
+
+  - type: suggest
+    message: |
+      When querying published articles:
+
+      1. Use the simple equality operator:
+         ```typescript
+         .where("published", "=", true)
+         ```
+
+      2. Keep queries consistent across components
+
+      3. The published field is defined as z.boolean() in content.config.ts
+
+examples:
+  - input: |
+      // Bad: Using numeric values
+      .where("published", "=", 1)
+      
+      // Bad: Using MongoDB operators
+      .where({ published: { $eq: true } })
+      
+      // Bad: Using negative conditions
+      .where("published", "!=", false)
+
+      // Good: Simple boolean equality
+      .where("published", "=", true)
+    output: "Correctly formatted published field query"
+
+metadata:
+  priority: high
+  version: 1.0
+</rule>

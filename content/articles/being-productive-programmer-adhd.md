@@ -5,7 +5,7 @@ tags: ['adhd', 'productivity']
 slug: being-productive-programmer-adhd
 ogImage: cover.jpg
 description: Being productive while having ADHD  can sometimes feel like a colossal task. So I compiled a list of methods that will help you stay focused as a programmer.
-draft: false
+published: true
 ---
 
 Being productive while having ADHD can sometimes feel like a colossal task. When I was rediagnosed with ADHD as an adult, I began to research ways to be more productive that are inattentive friendly.

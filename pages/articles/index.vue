@@ -1,11 +1,11 @@
 <template>
   <main class="min-h-screen">
     <AppHeader class="mb-8" title="Articles" :description="description" />
-    <div v-for="year in sortedYears" :key="year" class="my-4">
+    <div v-for="(year, index) in sortedYears" :key="index" class="my-4">
       <h2 class="text-2xl font-bold mb-2">{{ year }}</h2>
       <ul class="space-y-4 ml-4">
         <li v-for="(article, id) in groupedArticles[year]" :key="article._path">
-          <AppArticleCard :article="article" :delay-animation="id * 100" />
+          <AppArticleCard :article="article" :delay-animation="articleDelays[id]" />
         </li>
       </ul>
     </div>
@@ -24,11 +24,30 @@ useSeoMeta({
 });
 
 const { data: articles } = await useAsyncData(route.path, () => {
-  return queryCollection("article")
-    .where('draft', '=', 0)
-    .order('date', 'DESC')
-    .all();
+  let query = queryCollection("article")
+    .order('date', 'DESC');
+
+  // Only filter by published in production
+  if (!process.dev) {
+    query = query.where("published", "=", true);
+  }
+
+  return query.all();
 });
+
+// Debug logging
+console.log("Articles query result:", articles.value);
+if (articles.value) {
+  articles.value.forEach(article => {
+    console.log(`Article "${article.title}":`, {
+      published: article.published,
+      publishedType: typeof article.published,
+      date: article.date,
+      slug: article.slug
+    });
+  });
+}
+
 const groupedArticles = computed(() => {
   if (!articles.value) return {};
 
@@ -42,10 +61,25 @@ const groupedArticles = computed(() => {
   }, {});
 });
 
+
 // Add a new computed property for sorted years
 const sortedYears = computed(() => {
   return Object.keys(groupedArticles.value)
     .map(Number)
     .sort((a, b) => b - a);
 });
+
+
+const articleDelays = computed(() => {
+  let delayMap = {};
+  let delay = 0;
+
+  for (const article of articles.value.sort((a, b) => new Date(b.date) - new Date(a.date))) {
+    delay += 100;
+    delayMap[article.id] = delay;
+  }
+
+  return delayMap;
+});
+console.log(articleDelays.value);
 </script>

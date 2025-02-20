@@ -5,7 +5,7 @@ tags: ['productivity']
 slug: useful-function-killing-process-port
 ogImage: cover.jpg
 description: Heres a cool command
-draft: false
+published: true
 ---
 
 Hey everyone, I want to share with you a commandline function that helps quickly kill processes by their port. Some of the servers I start up love to stay running in the background after I closed them. So I often get errors that say something like:

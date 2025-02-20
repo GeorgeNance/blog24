@@ -5,7 +5,7 @@ ogImage: cover.jpg
 slug: dont-use-frontmatter-markdown-files-gatsby
 tags: [gatsby, tips]
 description: I am going to walk you through how to seperate your markdown files in Gatsby in a way that more sense then a frontmatter field
-draft: false
+published: true
 ---
 
 
@@ -26,7 +26,7 @@ Before I learned you could tell GraphQL to know the which markdown file was a pa
 ---
 title: 'How to be productive as a programmer with ADHD'
 date: '2020-06-19'
-draft: false
+published: true
 tags: ['adhd', 'productivity']
 coverImage: cover.jpg
 type: article

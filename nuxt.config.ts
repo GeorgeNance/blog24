@@ -6,12 +6,6 @@ export default defineNuxtConfig({
     defaultLocale: 'en', // not needed if you have @nuxtjs/i18n installed
   },
 
-  $production: {
-    routeRules: {
-      '/**': { isr: true }
-    }
-  },
-
   routeRules: {
     '/delete-untracked-files-git': { redirect: '/articles/delete-untracked-files-git' },
     '/being-productive-programmer-adhd': { redirect: '/articles/being-productive-programmer-adhd', },
@@ -20,7 +14,6 @@ export default defineNuxtConfig({
     '/contact': { redirect: '/' },
     '/write-more-css': { redirect: '/articles/write-more-css' },
     '/dont-use-frontmatter-markdown-files-gatsby': { redirect: '/articles/dont-use-frontmatter-markdown-files-gatsby' },
-
   },
 
   css: ['~/assets/css/main.css'],

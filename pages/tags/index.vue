@@ -25,12 +25,16 @@ useSeoMeta({
 });
 
 const { data: articles } = await useAsyncData("all-articles", () => {
-	return queryCollection("article")
-		.where("draft", "=", 0)
-		.all();
+	let query = queryCollection("article");
+
+	// Only filter by published in production
+	if (!import.meta.dev) {
+		query = query.where("published", "=", true);
+	}
+
+	return query.all();
 });
 
-console.log("Articles:", articles.value);
 
 // Get Tags - only proceed if we have articles
 const tags = articles.value?.map((article) => article.tags)

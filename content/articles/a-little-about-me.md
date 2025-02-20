@@ -4,7 +4,7 @@ date: 2015-04-05
 slug: a-little-about-me-2015
 archived: true
 description: The year was 2004, My parents bought me my first PC. I didn't have a clue about anything.
-draft: true
+published: false
 ---
 
 The year was 2004, My parents bought me my first PC. I didn't have a clue about anything. I called over a friend to help me set it all up. He was a bit annoyed that I needed his help for some menial task like installing Windows. After everything got set up, I popped in The Sims 2 and installed it. Back then, installing games could take almost an hour. For that hour I never stopped looking at the screen. I was so amazed by the image slideshow on the install screen. It was magical to my 12 year old mind. I then got a crazy idea. I wanted to make something that the computer could display like that loading screen. Err....well I didn't want to make a loading screen exactly. I wanted to make a program that the computer could see. Little did I know that 10 years later I would be creating my own game.

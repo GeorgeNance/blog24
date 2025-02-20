@@ -4,7 +4,7 @@ date: 2025-02-05
 tags: ['personal','programming']
 slug: things-i-have-learned
 description: New stack, who dis?
-draft: true
+published: false
 ---
 
 
