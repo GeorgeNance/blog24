@@ -28,7 +28,7 @@ export default {
               content: '""',
             },
 
-            '.prose p, .prose h2, .prose h3, .prose h4, .prose h5, .prose h6': {
+            '.prose p, .prose h2, .prose h3, .prose h4, .prose h5, .prose h6, .prose a, .prose li': {
               'text-decoration': 'none',
               'font-family': 'Merriweather',
             }

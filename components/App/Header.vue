@@ -1,9 +1,9 @@
 <template>
   <div>
-    <h1 class="text-2xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100">
+    <h1 class="text-2xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 font-serif">
       {{ title }}
     </h1>
-    <p class="mt-6 text-base text-gray-600 dark:text-gray-400">
+    <p class="mt-4 text-base text-gray-600 dark:text-gray-400 font-serif">
       {{ description }}
     </p>
     <!-- A glowy line -->

@@ -2,13 +2,14 @@
   <NuxtLink :to="`/articles/${article.slug}`" class="group">
     <article v-motion :initial="{
       opacity: 0,
-      y: -100,
+      y: -10,
       scale: 1,
     }" :enter="{
       opacity: 1,
       y: 0,
       scale: 1,
-    }" :delay="delayAnimation">
+    }" :delay="delayAnimation"
+             class="hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg p-4 transition-colors duration-300 ease-in-out">
       <div class="flex items-center gap-2">
         <h2
             class="text-base font-semibold font-display tracking-tight text-gray-800 dark:text-gray-100 group-hover:text-primary-600">
