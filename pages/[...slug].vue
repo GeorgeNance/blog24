@@ -1,19 +1,19 @@
 <template>
 	<div v-if="page" class="mb-32">
-		<main class="min-h-screen max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+		<main class="min-h-screen max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20">
 			<div class="relative flex items-start">
 				<div class="flex-grow">
 					<div class="max-w-3xl mx-auto">
 						<article class="w-full font-serif">
-							<h1 class="text-5xl dark:text-white font-h1 font-bold mb-8 mt-6 leading-tight">{{ page.title
-							}}</h1>
-							<div v-if="page.date" class="text-gray-600 dark:text-gray-500">
+							<h1 class="text-4xl sm:text-5xl dark:text-white font-h1 font-bold mb-6 mt-0 leading-tight">
+								{{ page.title }}</h1>
+							<div v-if="page.date" class="text-gray-600 dark:text-gray-500 mb-8">
 								Last updated: {{ getReadableDate(page.date) }}
 							</div>
 						</article>
 					</div>
 
-					<div class="max-w-3xl mx-auto w-full mt-10">
+					<div class="max-w-3xl mx-auto w-full mt-8">
 						<ContentRenderer :value="page"
 										 class="article-body prose prose-lg dark:prose-invert prose-blockquote:not-italic prose-pre:bg-gray-900 prose-img:ring-1 prose-img:ring-gray-200 dark:prose-img:ring-white/10 prose-img:rounded-lg mx-auto" />
 					</div>
