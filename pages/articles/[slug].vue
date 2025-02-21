@@ -1,36 +1,38 @@
 <template>
-  <div v-if="post">
+  <div v-if="post" class="mb-32">
     <main class="min-h-screen max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="">
-        <!-- <pre>
-            {{ post }}
-          </pre> -->
-        <article class="w-full">
-          <div v-if="post.published === false" class="bg-yellow-100 text-yellow-800 rounded-lg p-4 mb-4">
-            This article is not published yet.
+      <div class="relative flex items-start">
+        <div class="flex-grow">
+          <div class="max-w-3xl mx-auto">
+            <article class="w-full font-serif">
+              <div v-if="post.published === false" class="bg-yellow-100 text-yellow-800 rounded-lg p-4 mb-4">
+                This article is not published yet.
+              </div>
+              <h1 class="text-5xl dark:text-white font-h1 font-bold mb-8 mt-6 leading-tight">{{ post.title }}</h1>
+              <span class="text-gray-600 dark:text-gray-500">By George Nance</span>
+              <div class="text-gray-600 dark:text-gray-500">
+                Published on
+                <time class="" :datetime="post.date">{{ getReadableDate(post.date) }}</time>
+                <span class="mx-2">❖</span>
+                <span v-if="post.meta?.readingTime">{{ post.meta.readingTime.text }}</span>
+                <span v-for="(tag, index) in post.tags" :key="index">
+                  <NuxtLink :to="`/tags/${tag}`" class="ml-2 text-cyan-500 hover:underline">#{{ tag }}</NuxtLink>
+                </span>
+              </div>
+            </article>
           </div>
-          <h1 class="text-5xl dark:text-white font-h1 font-bold mb-8 mt-6 leading-tight">{{ post.title }}</h1>
-          <span class="text-gray-600 dark:text-gray-500"> By George Nance</span>
-          <div class="text-gray-600 dark:text-gray-500">
-            Published on
-            <time class="" :datetime="post.date">{{ getReadableDate(post.date) }}</time>
-            <span class="mx-2">❖</span>
-            <span v-if="post.meta?.readingTime">{{ post.meta.readingTime.text }}</span>
-            <span v-for="(tag, index) in post.tags" :key="index">
-              <NuxtLink :to="`/tags/${tag}`" class="ml-2 text-cyan-500 hover:underline">#{{ tag }}</NuxtLink>
-            </span>
+
+          <div class="max-w-3xl mx-auto w-full mt-10">
+            <ContentRenderer v-if="post" :value="post"
+                             class="article-body prose prose-lg dark:prose-invert prose-blockquote:not-italic prose-pre:bg-gray-900 prose-img:ring-1 prose-img:ring-gray-200 dark:prose-img:ring-white/10 prose-img:rounded-lg mx-auto"
+                             ref="articleBody" />
           </div>
-          <div class="grid grid-cols-4 gap-4 grid-flow-col w-full mt-10">
-            <div class="md:col-span-3 col-span-4">
-              <ContentRenderer v-if="post" :value="post"
-                               class="article-body prose prose-lg dark:prose-invert prose-blockquote:not-italic prose-pre:bg-gray-900 prose-img:ring-1 prose-img:ring-gray-200 dark:prose-img:ring-white/10 prose-img:rounded-lg"
-                               ref="articleBody" />
-            </div>
-            <aside class="col-span-1 hidden lg:flex lg:flex-col" v-if="post.body?.toc?.links?.length > 2">
-              <AppTableOfContents :toc="post.body.toc" />
-            </aside>
-          </div>
-        </article>
+        </div>
+
+        <aside v-if="!post.hideToc && post.body?.toc?.links?.length > 2" class="hidden lg:block sticky top-32 ml-8"
+               style="width: 280px; height: fit-content;">
+          <AppTableOfContents :toc="post.body.toc" />
+        </aside>
       </div>
     </main>
     <div class="mt-32 text-center">

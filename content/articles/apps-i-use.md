@@ -6,6 +6,7 @@ tags: ['productivity','tools','adhd']
 slug: apps-i-use
 description: I have assembled a list of great apps that I use everyday that make my life easier
 published: true
+hideToc: true
 ---
 ::callout
 This list is a bit outdated, I recommend looking at [my updated list](/bag)

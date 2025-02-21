@@ -90,6 +90,8 @@ export default defineNuxtConfig({
     display: "swap",
     families: {
       Inter: [400, 500, 600, 700, 800, 900],
+      Merriweather: [400, 700],
+      'JetBrains Mono': [400, 500, 600, 700, 800, 900],
     },
   },
 

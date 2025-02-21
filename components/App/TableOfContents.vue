@@ -1,7 +1,7 @@
 <template>
-  <div class="sticky top-16">
+  <div>
     <div
-         class="bg-white dark:bg-gray-800 rounded-lg p-5 shadow-md dark:shadow-gray-900/50 lg:mt-16 border dark:border-gray-700">
+         class="bg-white dark:bg-gray-800 rounded-lg p-5 shadow-md dark:shadow-gray-900/50 border dark:border-gray-700 max-w-xs">
       <h2 class="text-gray-900 dark:text-gray-100 text-sm tracking-wider font-bold uppercase">
         Table of contents
       </h2>
@@ -50,7 +50,7 @@ export default {
       observerOptions: {
         root: null,
         // Make the intersection band match our scroll target position
-        rootMargin: '-30% 0px -60% 0px',
+        rootMargin: '-20% 0px -60% 0px',
         threshold: 0
       }
     };

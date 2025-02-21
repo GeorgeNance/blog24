@@ -18,14 +18,19 @@ export default {
       typography: {
         DEFAULT: {
           css: {
-            // code:{
-            //   'background-color': 'red !important',
-            // },
+            code: {
+              'font-family': 'JetBrains Mono',
+            },
             'code::before': {
               content: '""',
             },
             'code::after': {
               content: '""',
+            },
+
+            '.prose p, .prose h2, .prose h3, .prose h4, .prose h5, .prose h6': {
+              'text-decoration': 'none',
+              'font-family': 'Merriweather',
             }
           },
         },
@@ -51,6 +56,14 @@ export default {
         '"Segoe UI Symbol"',
         '"Noto Color Emoji"',
       ],
+      serif: [
+        "Merriweather",
+        "ui-serif",
+        "Georgia",
+        "Cambria",
+        "Times New Roman",
+      ],
+
       mono: [
         "Cascadia Code",
         "ui-monospace",
