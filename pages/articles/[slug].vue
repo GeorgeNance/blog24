@@ -36,7 +36,7 @@
           </div>
         </div>
 
-        <aside v-if="!post.hideToc && post.body?.toc?.links?.length > 2" class="hidden lg:block sticky top-32 ml-12"
+        <aside v-if="!post.hide_toc && post.body?.toc?.links?.length > 2" class="hidden lg:block sticky top-32 ml-12"
                style="width: 280px; height: fit-content;">
           <AppTableOfContents :toc="post.body.toc" />
         </aside>

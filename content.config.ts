@@ -16,8 +16,8 @@ export default {
 				tags: z.array(z.string()),
 				published: z.boolean(),
 				archived: z.boolean().optional(),
-				updatedAt: z.date().optional(),
-				hideToc: z.boolean().optional(),
+				updated_at: z.date().optional(),
+				hide_toc: z.boolean().optional(),
 			})
 		}),
 		tag: defineCollection({
