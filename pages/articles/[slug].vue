@@ -9,7 +9,7 @@
                 This article is not published yet.
               </div>
               <h1 class="text-4xl sm:text-5xl dark:text-white font-h1 font-bold mb-6 mt-0 leading-tight">{{ post.title
-                }}</h1>
+              }}</h1>
               <div class="space-y-4">
                 <div class="text-gray-600 dark:text-gray-500 text-lg">By George Nance</div>
                 <div class="text-gray-600 dark:text-gray-500 flex flex-wrap gap-2 items-center text-base">
@@ -110,5 +110,13 @@ const getReadableDate = (dateString) => {
 .prose h2 a,
 .prose h3 a {
   @apply no-underline;
+}
+
+.prose pre {
+  @apply max-w-full;
+}
+
+.article-body {
+  @apply overflow-hidden;
 }
 </style>

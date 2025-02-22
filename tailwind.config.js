@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+
 export default {
   darkMode: 'class',
   content: [
@@ -27,7 +28,11 @@ export default {
             'code::after': {
               content: '""',
             },
-
+            pre: false,
+            code: false,
+            'pre code': false,
+            'code::before': false,
+            'code::after': false,
             '.prose p, .prose h2, .prose h3, .prose h4, .prose h5, .prose h6, .prose a, .prose li': {
               'text-decoration': 'none',
               'font-family': 'Merriweather',
