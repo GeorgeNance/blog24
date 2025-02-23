@@ -36,12 +36,12 @@ export default defineNuxtConfig({
     "@nuxtjs/google-fonts",
     "@nuxtjs/fontaine",
     "@nuxt/image",
+    '@nuxtjs/seo',
+    '@nuxtjs/color-mode',
     "@nuxt/content",
     // "@nuxthq/studio",
     "@vueuse/nuxt",
-    '@nuxtjs/seo',
     '@vueuse/motion/nuxt',
-    '@nuxtjs/color-mode',
     'nuxt-gtag'
   ],
 
@@ -73,16 +73,7 @@ export default defineNuxtConfig({
   },
 
   content: {
-    highlight: {
-      theme: {
-        // Default theme (same as single string)
-        default: "github-light",
-        // Theme used if `html.dark`
-        dark: "github-dark",
-        // Theme used if `html.sepia`
-        sepia: "monokai",
-      },
-    },
+
     build: {
       markdown: {
         // toc: {
@@ -91,6 +82,17 @@ export default defineNuxtConfig({
         // },
         remarkPlugins: {
           'remark-reading-time': {}
+        },
+
+        highlight: {
+          theme: {
+            // Default theme (same as single string)
+            default: "github-light",
+            // Theme used if `html.dark`
+            dark: "github-dark",
+            // Theme used if `html.sepia`
+            sepia: "monokai",
+          },
         },
       },
     },
