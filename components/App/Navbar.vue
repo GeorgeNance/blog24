@@ -49,7 +49,7 @@
                 </div>
               </div>
             </template>
-            <AppThemeToggle />
+            <!-- <AppThemeToggle /> -->
           </div>
         </div>
       </div>
