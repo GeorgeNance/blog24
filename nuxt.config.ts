@@ -27,7 +27,10 @@ export default defineNuxtConfig({
   },
 
   colorMode: {
-    classSuffix: ''
+    preference: 'system', // default value of $colorMode.preference
+    fallback: 'dark', // fallback value if not system preference found
+    storage: 'localStorage', // or 'sessionStorage' or 'cookie'
+    classSuffix: '-mode',
   },
 
   modules: [
@@ -87,9 +90,8 @@ export default defineNuxtConfig({
         highlight: {
           theme: {
             // Default theme (same as single string)
-            default: "github-light",
-            // Theme used if `html.dark`
-            dark: "github-dark",
+            default: 'min-light',
+            dark: 'nord',
             // Theme used if `html.sepia`
             sepia: "monokai",
           },
