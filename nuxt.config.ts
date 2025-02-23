@@ -27,7 +27,7 @@ export default defineNuxtConfig({
   },
 
   colorMode: {
-    preference: 'system', // default value of $colorMode.preference
+    preference: 'dark', // default value of $colorMode.preference
     fallback: 'dark', // fallback value if not system preference found
     storage: 'localStorage', // or 'sessionStorage' or 'cookie'
     classSuffix: '-mode',
