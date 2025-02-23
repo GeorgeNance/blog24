@@ -57,9 +57,9 @@ const copyCode = (): void => {
 				Copy
 			</button>
 		</div>
-		<div class="max-w-[calc(100vw-4rem)] overflow-x-auto">
-			<pre :class="['m-0 ', $props.class]">
-				<div class="px-6"><slot/></div></pre>
+		<div class="max-w-[calc(100vw-4rem)]">
+			<pre :class="['m-0  overflow-x-auto px-6', $props.class]">
+				<div class=""><slot/></div></pre>
 		</div>
 	</div>
 </template>
