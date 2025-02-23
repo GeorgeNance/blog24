@@ -57,10 +57,15 @@ export default defineNuxtConfig({
     head: {
       charset: "utf-8",
       viewport: "width=device-width, initial-scale=1",
+      meta: [
+        { name: 'theme-color', content: '#1e293b', media: '(prefers-color-scheme: dark)' },
+        { name: 'theme-color', content: '#ffffff', media: '(prefers-color-scheme: light)' },
+      ],
       htmlAttrs: {
         lang: "en",
-        class: "h-full",
+        class: "h-full"
       },
+
       bodyAttrs: {
         class: "antialiased text-slate-500 dark:text-slate-400 min-h-screen h-full dark:bg-slate-900 bg-white ",
       },
