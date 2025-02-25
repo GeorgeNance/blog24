@@ -1,18 +1,19 @@
 ---
-title: 'Now'
+title: 'Right now, I am'
 date: 2024-02-01
 slug: now
 description: What I am currently doing
 published: true
 ---
 
-## What I am currently doing:
 
 - Practicing getting better at Typescript
 - Working on my new blog stack in Nuxt 3
+- Playing Baulders Gate 3 with friends 
+
 
 ---
-Last updated: December 2024
+Last updated: Feb 2025
 
 
 
