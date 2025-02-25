@@ -4,18 +4,24 @@
 			<div class="relative flex items-start">
 				<div class="flex-grow">
 					<div class="max-w-3xl mx-auto">
-						<article class="w-full font-serif">
-							<h1 class="text-4xl sm:text-5xl dark:text-white font-h1 font-bold mb-6 mt-0 leading-tight">
-								{{ page.title }}</h1>
-							<div v-if="page.date" class="text-gray-600 dark:text-gray-500 mb-8">
-								Last updated: {{ getReadableDate(page.date) }}
-							</div>
+						<article class="w-full">
+							<!-- Page header with title and date -->
+							<header class="mb-12">
+								<h1
+									class="text-4xl sm:text-5xl dark:text-white font-h1 font-bold mb-4 mt-0 leading-tight">
+									{{ page.title }}
+								</h1>
+								<div v-if="page.date" class="text-gray-600 dark:text-gray-400 text-base">
+									Last updated: {{ getReadableDate(page.date) }}
+								</div>
+							</header>
 						</article>
 					</div>
 
-					<div class="max-w-3xl mx-auto w-full mt-8">
+					<!-- Page content -->
+					<div class="max-w-3xl mx-auto w-full">
 						<ContentRenderer :value="page"
-										 class="article-body prose prose-lg dark:prose-invert prose-blockquote:not-italic prose-pre:bg-gray-900 prose-img:ring-1 prose-img:ring-gray-200 dark:prose-img:ring-white/10 prose-img:rounded-lg mx-auto" />
+										 class="page-content prose prose-lg dark:prose-invert prose-headings:scroll-mt-24 prose-blockquote:not-italic prose-pre:bg-gray-900 prose-img:ring-1 prose-img:ring-gray-200 dark:prose-img:ring-white/10 prose-img:rounded-lg mx-auto" />
 					</div>
 				</div>
 			</div>
@@ -62,8 +68,22 @@ const getReadableDate = (dateString: string): string => {
 </script>
 
 <style>
-.prose h2 a,
-.prose h3 a {
+.page-content h2 a,
+.page-content h3 a {
 	@apply no-underline;
+}
+
+.page-content pre {
+	@apply max-w-full;
+}
+
+.page-content {
+	@apply mt-8;
+}
+
+/* Add a subtle divider between header and content */
+.page-content::before {
+	content: '';
+	@apply block w-16 h-0.5 bg-gray-200 dark:bg-gray-700 mb-8 rounded-full;
 }
 </style>

@@ -1,13 +1,13 @@
 <template>
   <main class="min-h-screen">
     <AppHeader class="mb-8" title="Subscribe" :description="description" />
-    
+
   </main>
 </template>
 
 <script setup>
 const description =
-  "Awesome things I've found on the internet. This page is still WIP, I want to add search like bmrks.com";
+  "If you like what I'm doing, you can subscribe to my newsletter to get updates on my projects and thoughts.";
 useSeoMeta({
   title: "Subscribe to George Nance's Newsletter",
   description,

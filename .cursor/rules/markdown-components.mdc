@@ -1,0 +1,62 @@
+---
+description: Markdown Components Organization
+globs: components/content/*.vue, content/*.md
+alwaysApply: false
+---
+
+# Markdown Components Organization
+
+Rules for organizing and implementing markdown components in the codebase.
+
+<rule>
+name: markdown_components_location
+description: All markdown components must be placed in the components/content directory
+
+filters:
+  # Match Vue files that are intended for markdown content
+  - type: file_extension
+    pattern: "\\.vue$"
+  # Match component creation events
+  - type: event
+    pattern: "file_create"
+
+actions:
+  - type: suggest
+    message: |
+      When creating components for markdown content:
+
+      1. Always place markdown components in the components/content directory:
+         ```
+         components/content/
+         ├── Quote.vue
+         ├── Callout.vue
+         └── ...
+         ```
+
+      2. Register components properly:
+         - Use `defineComponent({ name: 'ComponentName' })` to register with Nuxt Content
+         - Follow the naming convention (PascalCase for component names)
+
+      3. Usage in markdown:
+         ```md
+         ::ComponentName
+         Content goes here
+
+         #slotName
+         Slot content goes here
+         ::
+         ```
+
+examples:
+  - input: |
+      # Bad: Component in wrong location
+      components/Quote.vue
+      
+      # Good: Component in correct location
+      components/content/Quote.vue
+    output: "Correctly placed markdown component"
+
+metadata:
+  priority: medium
+  version: 1.0
+</rule> 

@@ -104,7 +104,7 @@ const menuItems = ref([
   { label: 'Home', link: '/', submenu: [], isSubMenuActive: false },
   { label: 'Articles', link: '/articles', submenu: [], isSubMenuActive: false },
   { label: 'Now', link: '/now', submenu: [], isSubMenuActive: false },
-  { label: 'Projects', link: '/projects', submenu: [], isSubMenuActive: false },
+  { label: 'About', link: '/about', submenu: [], isSubMenuActive: false },
   {
     label: 'More', link: '', submenu: [
       { label: 'Bag', link: '/bag' },
