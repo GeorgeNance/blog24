@@ -1,0 +1,19 @@
+{
+	"name": "Hardware",
+	"description": "Hardware I use",
+	"order": 1,
+	"items": [
+		{
+			"name": "Status Between 3ANC Onyx",
+			"description": "Before I got these as a gift, I thought the Airpods Pro was the best wireless earbuds. But these are on a whole different level. The sound quality is amazing, the noise cancellation is great, and the battery life is much better than the Airpods Pro. I use these for everything, from listening to music to taking calls. I highly recommend these.",
+			"url": "https://www.amazon.com/Status-Between-Cancelling-Wireless-Earbuds/dp/B0CLFXPYPC/",
+			"thumbnail": "/uses/apple-airpods-3.png"
+		},
+		{
+			"name": "Apple iPhone 15 Pro",
+			"description": "I don't update my phone often, so getting the latest iPhone was a big deal for me. I love the camera on this phone and the new 120hz display. Its a much better iPhone 12 Pro Max I had before.",
+			"url": "https://en.wikipedia.org/wiki/IPhone_15_Pro",
+			"thumbnail": "/uses/apple-iphone-12.png"
+		}
+	]
+}

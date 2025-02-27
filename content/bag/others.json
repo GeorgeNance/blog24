@@ -1,0 +1,12 @@
+{
+	"name": "Others",
+	"description": "Other things I use",
+	"order": 3,
+	"items": [
+		{
+			"name": "Xbox Series X",
+			"description": "I was a huge fan of the OG xbox, so I had to get this one. I don't play games as much as I used to, but I still enjoy playing games on this console and Game Pass is a great deal.",
+			"url": "https://www.amazon.com/Xbox-1TB-SSD-Console-Controller-Architecture/dp/B08H75RTZ8?th=1"
+		}
+	]
+}

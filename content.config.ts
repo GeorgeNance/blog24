@@ -43,6 +43,21 @@ export default {
 
 
 
+		}),
+		bag: defineCollection({
+			type: 'data',
+			source: 'bag/**.json',
+			schema: z.object({
+				name: z.string(),
+				description: z.string(),
+				order: z.number().optional(),
+				items: z.array(z.object({
+					name: z.string(),
+					description: z.string(),
+					url: z.string().optional(),
+					thumbnail: z.string().optional(),
+				}))
+			})
 		})
 	}
 }

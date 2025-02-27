@@ -1,0 +1,22 @@
+{
+	"name": "Software",
+	"description": "Software I use",
+	"order": 2,
+	"items": [
+		{
+			"name": "Tableplus",
+			"description": "I was using Sequel Pro for a long time, but it's not being maintained anymore. So I switched to Tableplus and I love it.",
+			"url": "https://tableplus.com/"
+		},
+		{
+			"name": "Obsdian",
+			"description": "Obsdidian is hands down the best note taking app I have used. It's a local first note taking app, which means all your notes are stored on your computer and not on the cloud. It has a lot of features and is highly customizable. The best part is that it's free.",
+			"url": "https://obsidian.md/"
+		},
+		{
+			"name": "Cleanshot",
+			"description": "This may be the most used app on my computer. It's like the default mac screenshot app, but on steroids. It has a lot of features like annotating screenshots, recording screen, etc. It's not free, but it's worth every penny.",
+			"url": "https://cleanshot.com/"
+		}
+	]
+}
