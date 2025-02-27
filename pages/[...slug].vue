@@ -30,14 +30,10 @@
 </template>
 
 <script setup lang="ts">
-interface PageData {
-	title: string;
-	description?: string;
-	date?: string;
-}
+
 
 const route = useRoute()
-const { data: page } = await useAsyncData<PageData>(route.path, () => {
+const { data: page } = await useAsyncData(route.path, () => {
 	return queryCollection('page').path(route.path).first()
 })
 
@@ -53,7 +49,7 @@ if (!page.value) {
 if (page.value) {
 	useSeoMeta({
 		title: page.value.title,
-		description: page.value.description,
+		description: page.value.description || '',
 	})
 }
 

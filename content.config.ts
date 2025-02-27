@@ -32,8 +32,17 @@ export default {
 
 		page: defineCollection({
 			type: 'page',
-			source: '**/*.md'
-		}),
+			source: '**/*.md',
+			schema: z.object({
+				title: z.string(),
+				description: z.string(),
+				slug: z.string(),
+				date: z.date().optional()
 
+			}),
+
+
+
+		})
 	}
 }
