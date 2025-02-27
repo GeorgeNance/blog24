@@ -8,14 +8,15 @@
       Welcome!👋
     </h1>
     <p ref="description" class="text-gray-900 dark:text-gray-300">
-      I'm <span class="text-cyan-500 font-bold">George Nance</span>, I'm a full stack web developer based in Phoenix,
+      I'm <NuxtLink to="/about" class="text-cyan-500 font-bold">George Nance</NuxtLink>, I'm a full stack web developer
+      based in Phoenix,
       AZ.
       I am
       passionate about technology and all
       things nerdy. Sometimes I write and publish it here.
     </p>
     <p class="text-gray-900 dark:text-gray-300">
-      If you are curious what I am up to, checkout my <NuxtLink to="/now" class="text-blue-600">Now</NuxtLink> page. If
+      If you are curious what I am up to, checkout my <NuxtLink to="/now" class="text-cyan-500">Now</NuxtLink> page. If
       you would like to get in contact with me, please reach out to me via the social links below.
     </p>
   </div>
