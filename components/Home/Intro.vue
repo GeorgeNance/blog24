@@ -8,7 +8,7 @@
       Welcome!👋
     </h1>
     <p ref="description" class="text-gray-900 dark:text-gray-300">
-      I'm <NuxtLink to="/about" class="text-cyan-500 font-bold">George Nance</NuxtLink>, I'm a full stack web developer
+      I'm <NuxtLink to="/about" class="text-cyan-500 font-bold">George Nance</NuxtLink>, I'm a full stack developer
       based in Phoenix,
       AZ.
       I am

@@ -7,8 +7,6 @@ date: 2024-02-25
 ---
 
 
-## Hey hey, I'm George
-
 I'm a full-stack developer, AI enthusiast, and problem-solver who loves creating impactful digital experiences. Whether it's building scalable web applications or experimenting with AI models, I thrive on solving complex challenges and pushing technology forward.
 
 
@@ -36,7 +34,7 @@ I was born and raised in Springfield, Illinois. Home of the famous Route 66, Lin
 
 My fascination with technology started with video games like RuneScape and The Sims 2, which made me curious about how things worked behind the scenes. I wanted to learn how to make my own games, so I downloaded GameMaker 6.0 and started making my own games. That slowly evolved into a passion for programming and problem-solving.
 
-I didn't take the traditional path into tech—I grew up in foster care and spent most of my teenage years in a group home. While in college, I lost both my parents and had to make some hard decisions about where I wanted my life to go. So I made the completely sane decision to move 1500 miles away from my family and friends to start a new life in Arizona. I was able to get a job working as an intern at a "startup-like" company that worked with b2b clients. From there, I was hooked. 
+I didn't take the traditional path into tech — I grew up in foster care and spent most of my teenage years in a group home. While in college, I lost both my parents and had to make some hard decisions about where I wanted my life to go. So I made the completely sane decision to move 1500 miles away from my family and friends to start a new life in Arizona. I was able to get a job working as an intern at a "startup-like" company that worked with b2b clients. From there, I was hooked. 
 
 Currently, I'm working as a Full Stack Developer at One Origin. I also have ran a side business with my fiancee, Maddie, creating AI pet portraits.
 
