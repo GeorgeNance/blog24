@@ -5,7 +5,7 @@
         class="text-base font-bold uppercase tracking-wider text-gray-700 dark:text-gray-200 mb-6 text-center relative pb-3 after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-12 after:h-0.5 after:bg-indigo-500 dark:after:bg-indigo-400 after:rounded-full">
       {{ title }}
     </h2>
-    <div class="grid grid-cols-2 md:grid-cols-3 gap-5"
+    <div class="grid grid-cols-2 md:grid-cols-2 gap-5"
          :class="layout === 'row' ? 'md:flex md:flex-wrap md:justify-center' : ''">
       <NuxtLink v-for="(link, index) in socialLinks" :key="link.icon" :to="link.url" target="_blank" external
                 class="flex flex-col items-center p-4 rounded-xl bg-white/70 dark:bg-gray-700/70 backdrop-blur-sm border border-gray-100/30 dark:border-white/5 text-gray-700 dark:text-gray-200 transition-all duration-300 hover:bg-white dark:hover:bg-gray-700 hover:shadow-md hover:-translate-y-1 group"
@@ -66,11 +66,6 @@ const props = defineProps({
 
 // Default social links
 const defaultLinks: SocialLink[] = [
-  {
-    name: "𝕏 (Twitter)",
-    url: "https://twitter.com/GeoNance",
-    icon: "bi:twitter-x"
-  },
   {
     name: "GitHub",
     url: "https://github.com/GeorgeNance",
