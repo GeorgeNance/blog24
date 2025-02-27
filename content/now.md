@@ -7,16 +7,14 @@ published: true
 ---
 
 
-- Practicing getting better at Typescript
-- Working on my new blog stack in Nuxt 3
-- Playing Baulders Gate 3 with friends 
+- 👨‍💻 Practicing my TypeScript skills.
+- 🖊️ Working on my new blog stack in Nuxt 3. Procrastonating writing a new post
+- 🕹️ Playing Baulders Gate 3 and Civ VI
 
 
 ---
-Last updated: Feb 2025
+Last updated: Feb 26th, 2025
 
 
 
 [What's a Now Page?](https://nownownow.com/about)
-
-
