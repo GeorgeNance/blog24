@@ -1,5 +1,5 @@
 <template>
-	<div class="container ">
+	<div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 ">
 		<slot />
 	</div>
 </template>
@@ -8,9 +8,4 @@
 
 </script>
 
-<style>
-.container {
-	/* Add Tailwind CSS classes or custom styles here */
-	@apply max-w-6xl mx-auto px-4 sm:px-6 lg:px-8;
-}
-</style>
+<style></style>

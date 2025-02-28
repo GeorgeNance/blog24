@@ -2,7 +2,7 @@
 	<div v-if="page" class="mb-32">
 		<main class="min-h-screen max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20">
 			<div class="relative flex items-start">
-				<div class="flex-grow">
+				<div class="grow">
 					<div class="max-w-3xl mx-auto">
 						<article class="w-full">
 							<!-- Page header with title and date -->
@@ -63,23 +63,4 @@ const getReadableDate = (dateString: string): string => {
 }
 </script>
 
-<style>
-.page-content h2 a,
-.page-content h3 a {
-	@apply no-underline;
-}
-
-.page-content pre {
-	@apply max-w-full;
-}
-
-.page-content {
-	@apply mt-8;
-}
-
-/* Add a subtle divider between header and content */
-.page-content::before {
-	content: '';
-	@apply block w-16 h-0.5 bg-gray-200 dark:bg-gray-700 mb-8 rounded-full;
-}
-</style>
+<style></style>

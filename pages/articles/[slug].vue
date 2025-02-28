@@ -2,7 +2,7 @@
   <div v-if="post" class="mb-32">
     <main class="min-h-screen max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20">
       <div class="relative flex items-start">
-        <div class="flex-grow">
+        <div class="grow">
           <div class="max-w-3xl mx-auto">
             <article class="w-full font-serif">
               <div v-if="post.published === false" class="bg-yellow-100 text-yellow-800 rounded-lg p-4 mb-6">
@@ -106,13 +106,4 @@ const getReadableDate = (dateString) => {
   });
 };
 </script>
-<style>
-.prose h2 a,
-.prose h3 a {
-  @apply no-underline;
-}
-
-.prose pre {
-  @apply max-w-full;
-}
-</style>
+<style></style>

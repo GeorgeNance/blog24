@@ -7,7 +7,7 @@
       {{ description }}
     </p>
     <!-- A glowy line -->
-    <div class="mt-6 h-1 w-full bg-gradient-to-r from-zinc-600 to-zinc-400 rounded-full"></div>
+    <div class="mt-6 h-1 w-full bg-linear-to-r from-zinc-600 to-zinc-400 rounded-full"></div>
   </div>
 </template>
 

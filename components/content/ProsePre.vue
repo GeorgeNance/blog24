@@ -49,10 +49,10 @@ const copyCode = (): void => {
 				 class="ml-0 mr-auto font-mono text-sm text-[var(--shiki-default)] opacity-50 truncate">
 				<i>{{ filename }}</i>
 			</div>
-			<span v-if="codeCopied" class="px-3 rounded text-green-300 font-[sans-serif] text-sm opacity-50">
+			<span v-if="codeCopied" class="px-3 rounded-sm text-green-300 font-[sans-serif] text-sm opacity-50">
 				<i>Copied</i>
 			</span>
-			<button class="px-3  rounded border font-[sans-serif] text-sm text-[var(--shiki-default)] opacity-25 hover:opacity-50 bg-inherit border-[var(--shiki-default)] hover:text-white hover:border-white whitespace-nowrap transition-all duration-300"
+			<button class="px-3  rounded-sm border font-[sans-serif] text-sm text-[var(--shiki-default)] opacity-25 hover:opacity-50 bg-inherit border-[var(--shiki-default)] hover:text-white hover:border-white whitespace-nowrap transition-all duration-300"
 					@click="copyCode">
 				Copy
 			</button>

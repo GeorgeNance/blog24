@@ -12,7 +12,7 @@
         <ul class="space-y-3">
           <li v-for="link of toc.links" :key="link.id" :class="{
             'pl-4': link.depth === 3
-          }" class="toc-list">
+          }" class="relative">
             <a @click.prevent="scrollToSection(link)" :class="{
               'text-emerald-700 dark:text-emerald-400': link.id === currentlyActiveToc,
               'text-gray-600 dark:text-gray-400 hover:text-emerald-600 dark:hover:text-emerald-400': link.id !== currentlyActiveToc
@@ -94,12 +94,4 @@ export default {
 };
 </script>
 
-<style>
-.toc-list {
-  @apply relative;
-}
-
-.toc-list:not(:last-child) {
-  @apply border-b border-gray-100 dark:border-gray-700;
-}
-</style>
+<style></style>

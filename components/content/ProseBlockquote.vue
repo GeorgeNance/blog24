@@ -1,7 +1,7 @@
 <template>
 	<figure class="not-prose my-10">
 		<blockquote
-					class="relative p-8 bg-gray-50/70 dark:bg-gray-800/30 rounded-lg text-gray-800 dark:text-gray-200 shadow-sm">
+					class="relative p-8 bg-gray-50/70 dark:bg-gray-800/30 rounded-lg text-gray-800 dark:text-gray-200 shadow-xs">
 			<div class="absolute -left-4 top-2 w-10 h-10 text-indigo-400 dark:text-indigo-500 opacity-40">
 				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
 					<path

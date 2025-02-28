@@ -1,6 +1,6 @@
 <template>
   <NuxtLoadingIndicator color="#14b8a6" />
-  <div class="bg-gradient-to-br dark:from-slate-900 dark:to-slate-800 from-white to-slate-100">
+  <div class="bg-linear-to-br dark:from-slate-900 dark:to-slate-800 from-white to-slate-100">
 
 
 

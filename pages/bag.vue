@@ -11,7 +11,7 @@
           <p class="mt-1 text-sm text-gray-600 dark:text-gray-400">
             {{ category.description }}
           </p>
-          <div class="mt-3 h-px w-full bg-gradient-to-r from-zinc-500/50 to-transparent"></div>
+          <div class="mt-3 h-px w-full bg-linear-to-r from-zinc-500/50 to-transparent"></div>
         </div>
 
         <div class="space-y-2">

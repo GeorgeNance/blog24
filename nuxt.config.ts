@@ -1,3 +1,5 @@
+import tailwindcss from '@tailwindcss/vite';
+
 export default defineNuxtConfig({
   site: {
     url: 'https://georgenance.com',
@@ -32,8 +34,11 @@ export default defineNuxtConfig({
     classSuffix: '-mode',
   },
 
+  vite: {
+    plugins: [tailwindcss()],
+  },
+
   modules: [
-    '@nuxtjs/tailwindcss',
     "nuxt-icon",
     "@nuxtjs/google-fonts",
     "@nuxtjs/fontaine",
@@ -47,12 +52,7 @@ export default defineNuxtConfig({
     'nuxt-gtag'
   ],
 
-  tailwindcss: {
-    configPath: '~/tailwind.config.js',
-    exposeConfig: true,
-    viewer: true,
-    // and more...
-  },
+
 
   app: {
     pageTransition: { name: "page", mode: "out-in" },
