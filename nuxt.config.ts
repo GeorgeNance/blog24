@@ -79,7 +79,12 @@ export default defineNuxtConfig({
 
   content: {
     preview: {
-      api: 'https://api.nuxt.studio'
+      api: 'https://api.nuxt.studio',
+      gitInfo: {
+        name: 'georgenance.com',
+        owner: 'georgenance',
+        url: 'https://github.com/georgenance/georgenance.com'
+      }
     },
     build: {
       markdown: {
