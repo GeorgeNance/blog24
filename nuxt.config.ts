@@ -38,19 +38,8 @@ export default defineNuxtConfig({
     plugins: [tailwindcss()],
   },
 
-  modules: [
-    "nuxt-icon",
-    "@nuxtjs/google-fonts",
-    "@nuxtjs/fontaine",
-    "@nuxt/image",
-    '@nuxtjs/seo',
-    '@nuxtjs/color-mode',
-    "@nuxt/content",
-    // "@nuxthq/studio",
-    "@vueuse/nuxt",
-    '@vueuse/motion/nuxt',
-    'nuxt-gtag'
-  ],
+  modules: ["nuxt-icon", "@nuxtjs/google-fonts", "@nuxtjs/fontaine", "@nuxt/image", '@nuxtjs/seo', '@nuxtjs/color-mode', "@nuxt/content", // "@nuxthq/studio",
+    "@vueuse/nuxt", '@vueuse/motion/nuxt', 'nuxt-gtag', '@nuxthq/studio'],
 
 
 
