@@ -73,4 +73,7 @@ I'm always open to discussing ideas, collaborating on projects, or just geeking 
 
 
 
+::subscribe
+
+
 

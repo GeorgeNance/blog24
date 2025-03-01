@@ -31,11 +31,11 @@ const props = defineProps({
 const typeClasses = {
 	info: {
 		bg: "bg-blue-50/80 dark:bg-blue-900/15 outline-blue-300 dark:outline-blue-700",
-		side: "bg-blue-400 dark:bg-blue-500",
+		side: "bg-secondary",
 	},
 	warning: {
 		bg: "bg-orange-50/90 dark:bg-amber-900/15 outline-orange-300 dark:outline-amber-600",
-		side: "bg-orange-500 dark:bg-amber-500",
+		side: "bg-primary",
 	},
 	danger: {
 		bg: "bg-red-50/80 dark:bg-red-900/15 outline-red-300 dark:outline-red-600",

@@ -1,18 +1,20 @@
 <template>
-  <div ref="headerRef" :style="styles" class="bg-white/95 dark:bg-slate-800/90 fixed top-0 w-full z-50 backdrop-blur-sm">
+  <div ref="headerRef" :style="styles"
+       class="bg-white/95 dark:bg-slate-800/90 fixed top-0 w-full z-50 backdrop-blur-sm">
     <nav class="border-b border-gray-200 dark:border-gray-700">
       <div class="max-w-6xl mx-auto px-4">
         <div class="flex justify-between">
           <!-- logo -->
           <div>
             <NuxtLink href="/"
-                      class="flex items-center py-5 px-2 text-gray-900 hover:text-emerald-700 dark:text-gray-100 dark:hover:text-emerald-400 font-bold transition-colors duration-200">
+                      class="flex items-center py-5 px-2 text-gray-900 hover:text-emerald-700 dark:text-gray-100 dark:hover:text-primary font-bold transition-colors duration-200">
               <span>George Nance</span>
             </NuxtLink>
           </div>
           <!-- mobile menu button -->
           <div class="md:hidden flex items-center">
-            <button @click="toggleMobileMenu" class="outline-hidden mobile-menu-button text-gray-700 dark:text-gray-300">
+            <button @click="toggleMobileMenu"
+                    class="outline-hidden mobile-menu-button text-gray-700 dark:text-gray-300">
               <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                    xmlns="http://www.w3.org/2000/svg">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
@@ -26,8 +28,8 @@
                 <NuxtLink :to="item.link"
                           class="py-5 px-3 font-semibold transition-all duration-200 ease-in-out cursor-pointer" :class="[
                             route.path === item.link
-                              ? 'text-emerald-700 dark:text-emerald-400'
-                              : 'text-gray-700 dark:text-gray-300 hover:text-emerald-700 dark:hover:text-emerald-400',
+                              ? 'text-primary dark:text-primary hover:text-primary-100 '
+                              : 'text-gray-700 dark:text-gray-300 hover:text-primary-100',
                           ]" :style="{
                             opacity: route.path === item.link ? '1' : '0.85'
                           }">

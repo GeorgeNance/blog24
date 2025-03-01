@@ -14,15 +14,15 @@
             'pl-4': link.depth === 3
           }" class="relative">
             <a @click.prevent="scrollToSection(link)" :class="{
-              'text-emerald-700 dark:text-emerald-400': link.id === currentlyActiveToc,
-              'text-gray-600 dark:text-gray-400 hover:text-emerald-600 dark:hover:text-emerald-400': link.id !== currentlyActiveToc
+              'text-primary-100 hover:text-primary-500': link.id === currentlyActiveToc,
+              'text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primary': link.id !== currentlyActiveToc
             }" class="block text-sm transition-colors duration-200 ease-in-out py-1 font-semibold" :style="{
               opacity: link.id === currentlyActiveToc ? '1' : '0.7'
             }" :href="`#${link.id}`">
               <span class="relative">
                 {{ link.text }}
                 <span v-if="link.id === currentlyActiveToc"
-                      class="absolute -left-4 top-1/2 -translate-y-1/2 w-2 h-2 bg-emerald-500 dark:bg-emerald-400 rounded-full">
+                      class="absolute -left-4 top-1/2 -translate-y-1/2 w-2 h-2 bg-primary-100  rounded-full">
                 </span>
               </span>
             </a>
